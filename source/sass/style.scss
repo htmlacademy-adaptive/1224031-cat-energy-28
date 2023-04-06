@@ -1,1 +1,10 @@
-// Начните писать стили здесь
+@use "global/fonts";
+@use "global/global";
+@use "header/page-header";
+@use "header/header-logo-link";
+@use "header/header-logo";
+@use "header/header-title";
+@use "main/main-page";
+@use "main/program-choose";
+@use "main/program-presentation";
+@use "main/catalog-choose.scss";

@@ -4,31 +4,36 @@
 <head>
   <meta charset="utf-8">
   <title>HTML Academy: Кэт энерджи</title>
+  <link href="css/style.css" rel="stylesheet">
 </head>
 
 <body>
-<header class="page-header">
-  <img class="header-logo" src="img/logo-mobile.svg" alt="Логотип">
-  <img class="header-title" src="img/header-title.svg" alt="Cat Energy">
+<header class="page-header container">
+  <a class="page-header__logo header-logo-link" href="index.html">
+    <img class="header-logo-link__image header-logo" src="img/logo-mobile.svg" alt="Логотип">
+    <img class="header-logo-link__title header-title" src="img/header-title.svg" alt="Cat Energy">
+  </a>
   <button class="page-header__menu"><img src="img/mobile-menu-button.svg" alt=""><span
     class="visually-hidden">Открыть меню</span></button>
 </header>
-<main class="main-page">
+<main class="main-page container">
   <section class="program-choose">
-    <h1 class="program-choose__header">Функциональное питание для котов</h1>
-    <p class="program-choose__text">Занялся собой? Займись котом!</p>
-    <img class="program-choose__img" src="img/program-choose-image.png" alt="">
+    <div class="program-choose__background-wrapper program-presentation">
+      <h1 class="program-presentation__header">Функциональное<br> питание для котов</h1>
+      <p class="program-presentation__text">Занялся собой? Займись котом!</p>
+      <img class="program-presentation__image" src="img/program-choose-image.png" alt="">
+    </div>
     <a class="button program-choose__button" href="form.html">Подобрать программу</a>
   </section>
   <section class="catalog-choose">
-    <div class="catalog-slim">
+    <div class="catalog-choose__item catalog-slim">
       <img src="img/catalog-slim.svg" alt="">
       <h2 class="catalog-slim__header">Похудение</h2>
       <p class="catalog-slim__text">Ваш кот весит больше собаки и почти утратил способность лазить по деревьям? Пора на
         диету! Cat Energy Slim поможет вашему питомцу сбросить лишний вес.</p>
       <a class="catalog-slim__link">Каталог slim<img src="img/mobile-catalog-open-button.svg" alt=""></a>
     </div>
-    <div class="catalog-pro">
+    <div class="catalog-choose__item catalog-pro">
       <img src="img/catalog-pro.svg" alt="">
       <h2 class="catalog-pro__header">Набор массы</h2>
       <p class="catalog-pro__text">Заработать авторитет среди дворовых котов и даже собак? Серия Cat Energy Pro поможет
@@ -83,7 +88,8 @@
     <div class="page-footer__social social">
       <h2 class="visually-hidden">Ссылки на социальные сети</h2>
       <a class="social__vk" href="https://vk.com/htmlacademy"><img src="img/vkontakte.svg" alt="ВКонтакте"></a>
-      <a class="social__youtube" href="https://www.youtube.com/user/htmlacademyru"><img src="img/youtube.svg" alt="YouTube"></a>
+      <a class="social__youtube" href="https://www.youtube.com/user/htmlacademyru"><img src="img/youtube.svg"
+                                                                                        alt="YouTube"></a>
       <a class="social__telegram" href="https://t.me/htmlacademy"><img src="img/telegram.svg" alt="Telegram"></a>
     </div>
     <div class="page-footer__development development">
