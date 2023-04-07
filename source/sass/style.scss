@@ -1,10 +1,38 @@
+//Общие стили
 @use "global/fonts";
 @use "global/global";
-@use "header/page-header";
-@use "header/header-logo-link";
-@use "header/header-logo";
-@use "header/header-title";
-@use "main/main-page";
-@use "main/program-choose";
-@use "main/program-presentation";
-@use "main/catalog-choose.scss";
+
+//Главная страница
+@use "page-header";
+@use "header-logo-link";
+@use "program-choose";
+@use "program-presentation";
+@use "catalog-choose";
+@use "button";
+@use "catalog-slim";
+@use "catalog-pro";
+@use "how-it-works";
+@use "example";
+@use "example-data";
+@use "cooperate";
+
+//Каталог
+@use "catalog-page";
+@use "catalog-list";
+@use "catalog-items";
+@use "catalog-item";
+@use "product-information";
+@use "additional-goods";
+@use "additional-item";
+@use "additional-item-info";
+@use "additional-goods-gift";
+@use "gift-info";
+
+//Форма
+@use "form-page";
+@use "cat-register-form";
+@use "cat-data";
+@use "program-type";
+@use "cat-owner-data";
+@use "more-info";
+@use "food-additives";
