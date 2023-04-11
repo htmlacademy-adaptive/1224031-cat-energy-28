@@ -3,36 +3,34 @@
 @use "global/global";
 
 //Главная страница
-@use "page-header";
-@use "header-logo-link";
-@use "program-choose";
-@use "program-presentation";
-@use "catalog-choose";
-@use "button";
-@use "catalog-slim";
-@use "catalog-pro";
-@use "how-it-works";
-@use "example";
-@use "example-data";
-@use "cooperate";
+@use "blocks/page-header";
+@use "blocks/header-logo-link";
+@use "blocks/main-menu";
+@use "blocks/program-choose";
+@use "blocks/program-presentation";
+@use "blocks/catalog-choose";
+@use "blocks/button";
+@use "blocks/catalog-slim";
+@use "blocks/catalog-pro";
+@use "blocks/advantages-list";
+@use "blocks/how-it-works";
+@use "blocks/example";
+@use "blocks/example-data";
+@use "blocks/cooperate";
 
 //Каталог
-@use "catalog-page";
-@use "catalog-list";
-@use "catalog-items";
-@use "catalog-item";
-@use "product-information";
-@use "additional-goods";
-@use "additional-item";
-@use "additional-item-info";
-@use "additional-goods-gift";
-@use "gift-info";
+@use "blocks/catalog-page";
+@use "blocks/catalog-list";
+@use "blocks/catalog-items";
+@use "blocks/catalog-item";
+@use "blocks/product-information";
+@use "blocks/additional-goods";
+@use "blocks/additional-item";
+@use "blocks/additional-item-info";
+@use "blocks/additional-goods-gift";
+@use "blocks/gift-info";
 
 //Форма
-@use "form-page";
-@use "cat-register-form";
-@use "cat-data";
-@use "program-type";
-@use "cat-owner-data";
-@use "more-info";
-@use "food-additives";
+@use "blocks/form-page";
+@use "blocks/form";
+@use "blocks/program-type";

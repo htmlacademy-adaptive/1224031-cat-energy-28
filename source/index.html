@@ -3,6 +3,7 @@
 
 <head>
   <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
   <title>HTML Academy: Кэт энерджи</title>
   <link href="css/style.css" rel="stylesheet">
 </head>
@@ -13,8 +14,13 @@
     <img class="header-logo-link__image header-logo" src="img/logo-mobile.svg" alt="Логотип">
     <img class="header-logo-link__title header-title" src="img/header-title.svg" alt="Cat Energy">
   </a>
-  <button class="page-header__menu"><img src="img/mobile-menu-button.svg" alt=""><span
+  <button class="page-header__menu-button"><img src="img/mobile-menu-button.svg" alt=""><span
     class="visually-hidden">Открыть меню</span></button>
+  <ul class="page-header__menu main-menu">
+    <li class="main-menu__item"><a class="main-menu__link main-menu__link--header-menu" href="index.html">Главная</a></li>
+    <li class="main-menu__item"><a class="main-menu__link main-menu__link--header-menu" href="catalog.html">Каталог продукции</a></li>
+    <li class="main-menu__item"><a class="main-menu__link main-menu__link--header-menu" href="form.html">Подбор программы</a></li>
+  </ul>
 </header>
 <main class="main-page container">
   <section class="program-choose">
@@ -52,25 +58,25 @@
     <ul class="how-it-works__advantages advantages-list">
       <li class="advantages-list__item">
         <img src="img/how-it-works-leaf.svg" alt="">
-        <p class="how-it-works__description">Функциональное питание
+        <p class="advantages-list__description">Функциональное питание
           содержит только полезные
           питательные вещества.</p>
       </li>
       <li class="advantages-list__item">
         <img src="img/how-it-works-liquid.svg" alt="">
-        <p class="how-it-works__description">Выпускается в виде порошка,
+        <p class="advantages-list__description">Выпускается в виде порошка,
           который нужно лишь залить
           кипятком и готово.</p>
       </li>
       <li class="advantages-list__item">
         <img src="img/how-it-works-food.svg" alt="">
-        <p class="how-it-works__description">Замените один-два приема
+        <p class="advantages-list__description">Замените один-два приема
           обычной еды на наше
           функциональное питание.</p>
       </li>
       <li class="advantages-list__item">
         <img src="img/how-it-works-time.svg" alt="">
-        <p class="how-it-works__description">Уже через месяц наслаждайтесь изменениями к лучшему вашего питомца!</p>
+        <p class="advantages-list__description">Уже через месяц наслаждайтесь изменениями к лучшему вашего питомца!</p>
       </li>
     </ul>
   </section>
