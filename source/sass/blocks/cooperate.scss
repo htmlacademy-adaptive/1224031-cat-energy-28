@@ -1,10 +1,9 @@
-.cooperate {
-  padding: 26px 20px;
-  background-color: #f2f2f2;
+.cooperate__wrapper {
+  background-color: #ffffff;
 }
 
-.cooperate--main-page {
-  background-color: #ffffff;
+.cooperate--main-page-background {
+  background-color: #f2f2f2;
 }
 
 .cooperate__text {
@@ -23,4 +22,45 @@
   font-size: 14px;
   line-height: 20px;
   font-style: normal;
+}
+
+.cooperate__map-frame {
+  width: 320px;
+  height: 362px;
+}
+
+@media (min-width: $tablet-width) {
+  .cooperate__map-frame {
+    width: 710px;
+    height: 400px;
+  }
+}
+
+
+@media (min-width: $desktop-width) {
+  .cooperate {
+    position: relative;
+  }
+
+  .cooperate__text {
+    width: 160px;
+  }
+
+  .cooperate__address {
+    width: 175px;
+  }
+
+  .cooperate__map-frame {
+    position: absolute;
+    z-index: -1;
+    top: 0;
+    left: 0;
+    width: 100%;
+  }
+
+  .cooperate__wrapper {
+    display: flex;
+    width: 365px;
+    margin-bottom: 340px;
+  }
 }

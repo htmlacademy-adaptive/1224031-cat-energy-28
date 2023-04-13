@@ -15,3 +15,10 @@
 .how-it-works__advantages {
   margin-top: 40px;
 }
+
+@media (min-width: $tablet-width) {
+  .how-it-works__header {
+    font-size: 60px;
+    line-height: 60px;
+  }
+}

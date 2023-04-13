@@ -1,6 +1,5 @@
 .program-presentation {
   font-family: "Oswald", "Arial", sans-serif;
-  height: 302px;
   text-align: center;
   color: #ffffff;
 }
@@ -20,8 +19,46 @@
   text-transform: uppercase;
   margin: 0;
   padding-top: 25px;
+  padding-bottom: 130px;
 }
 
 .program-presentation__image {
   padding-top: 30px;
+  width: 280px;
+  height: 270px;
+}
+
+@media (min-width: $tablet-width) {
+  .program-presentation {
+    text-align: left;
+  }
+
+  .program-presentation__header {
+    font-size: 60px;
+    line-height: 60px;
+    color: #000000;
+  }
+
+  .program-presentation__text {
+    font-size: 20px;
+    line-height: 20px;
+    color: #000000;
+    padding-bottom: 50px;
+  }
+
+  .program-presentation__image {
+    width: 600px;
+    height: 550px;
+  }
+}
+
+@media (min-width: $desktop-width) {
+  .program-presentation__header {
+    padding-top: 110px;
+  }
+
+  .program-presentation__image {
+    width: 550px;
+    height: 500px;
+  }
 }

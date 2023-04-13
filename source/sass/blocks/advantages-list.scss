@@ -11,3 +11,50 @@
   line-height: 18px;
   margin: 0;
 }
+
+@media (min-width: $tablet-width) {
+  .advantages-list {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 37px 150px;
+  }
+
+  .advantages-list__item {
+    height: 230px;
+
+    &:nth-child(1) {
+      background-image: url("../img/advantages-list-background-number-1.svg");
+      background-repeat: no-repeat;
+      background-position: right;
+    }
+
+    &:nth-child(2) {
+      background-image: url("../img/advantages-list-background-number-2.svg");
+      background-repeat: no-repeat;
+      background-position: right;
+    }
+
+    &:nth-child(3) {
+      background-image: url("../img/advantages-list-background-number-3.svg");
+      background-repeat: no-repeat;
+      background-position: right;
+    }
+
+    &:nth-child(4) {
+      background-image: url("../img/advantages-list-background-number-4.svg");
+      background-repeat: no-repeat;
+      background-position: right;
+    }
+  }
+
+  .advantages-list__description {
+    font-size: 16px;
+    line-height: 24px;
+  }
+}
+
+@media (min-width: $desktop-width) {
+  .advantages-list {
+    display: flex;
+  }
+}

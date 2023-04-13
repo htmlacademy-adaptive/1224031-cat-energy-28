@@ -1,0 +1,10 @@
+@media (min-width: $tablet-width) {
+  .example-statistic {
+    display: flex;
+  }
+
+  .example-statistic__data {
+    display: flex;
+    flex-direction: column;
+  }
+}

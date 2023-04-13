@@ -19,3 +19,20 @@
 .additional-item__order {
   margin-top: 15px;
 }
+
+@media (min-width: $tablet-width) {
+  .additional-item {
+    display: flex;
+    flex-direction: column;
+  }
+
+  .additional-item__item-name {
+    font-size: 20px;
+    line-height: 20px;
+  }
+
+  .additional-item__info {
+    font-size: 16px;
+    line-height: 20px;
+  }
+}

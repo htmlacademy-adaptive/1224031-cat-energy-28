@@ -28,3 +28,15 @@
   line-height: 16px;
   color: #000000;
 }
+
+@media (min-width: $tablet-width) {
+  .form-page__header {
+    font-size: 60px;
+    line-height: 60px;
+  }
+
+  .form-page__description {
+    font-size: 20px;
+    line-height: 30px;
+  }
+}

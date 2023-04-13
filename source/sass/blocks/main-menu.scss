@@ -12,9 +12,15 @@
 .main-menu__link {
   display: inline-block;
   text-decoration: none;
-  padding: 22px 70px 24px;
 }
 
 .main-menu__link--header-menu {
   color: #000000;
+}
+
+@media (min-width: $tablet-width) {
+  .main-menu__item {
+    border: none;
+    margin-right: 25px;
+  }
 }

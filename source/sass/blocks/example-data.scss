@@ -11,3 +11,15 @@
   font-size: 12px;
   line-height: 12px;
 }
+
+@media (min-width: $tablet-width) {
+  .example-data__number {
+    font-size: 30px;
+    line-height: 37px;
+  }
+
+  .example-data__text {
+    font-size: 14px;
+    line-height: 14px;
+  }
+}

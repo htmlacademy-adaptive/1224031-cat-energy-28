@@ -17,3 +17,30 @@
   text-align: center;
   margin-top: 13px;
 }
+
+.catalog-item__image--500 {
+  width: 70px;
+  height: 80px;
+}
+
+.catalog-item__image--1000 {
+  width: 85px;
+  height: 100px;
+}
+
+@media (min-width: $tablet-width) {
+  .catalog-item__link--header {
+    font-size: 20px;
+    line-height: 24px;
+  }
+
+  .catalog-item__image--500 {
+    width: 160px;
+    height: 170px;
+  }
+
+  .catalog-item__image--1000 {
+    width: 168px;
+    height: 200px;
+  }
+}

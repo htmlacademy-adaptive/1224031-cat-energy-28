@@ -6,3 +6,10 @@
   color: #000000;
   margin: 27px 0 40px;
 }
+
+@media (min-width: $tablet-width) {
+  .catalog-page__header {
+    font-size: 60px;
+    line-height: 60px;
+  }
+}

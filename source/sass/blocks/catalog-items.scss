@@ -1,3 +1,8 @@
+.catalog-items__more-items-image {
+  width: 30px;
+  height: 30px;
+}
+
 .catalog-items__more-items {
   font-family: "Oswald", "Arial", sans-serif;
   font-weight: 400;
@@ -21,4 +26,21 @@
 .catalog-items__more-items-button {
   display: block;
   margin-top: 20px;
+}
+
+@media (min-width: $tablet-width) {
+  .catalog-items__more-items-image {
+    width: 60px;
+    height: 60px;
+  }
+
+  .catalog-items__more-items {
+    font-size: 20px;
+    line-height: 22px;
+  }
+
+  .catalog-items__description {
+    font-size: 16px;
+    line-height: 18px;
+  }
 }
