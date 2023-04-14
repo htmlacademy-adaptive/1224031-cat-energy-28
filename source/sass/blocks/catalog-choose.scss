@@ -1,0 +1,12 @@
+.catalog-choose__item {
+  margin-top: 20px;
+}
+
+@media (min-width: $desktop-width) {
+  .catalog-choose__grid-wrapper {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 80px;
+    margin-bottom: 70px;
+  }
+}

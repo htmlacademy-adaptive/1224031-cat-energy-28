@@ -1,0 +1,10 @@
+.additional-item-info__count {
+  margin: 0;
+}
+
+@media (min-width: $tablet-width) {
+  .additional-item-info {
+    display: flex;
+    justify-content: space-between;
+  }
+}

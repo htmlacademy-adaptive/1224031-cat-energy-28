@@ -1,0 +1,42 @@
+.form-page__header {
+  font-family: "Oswald", "Arial", sans-serif;
+  font-weight: 400;
+  font-size: 36px;
+  line-height: 36px;
+  color: #000000;
+  margin: 27px 0 0;
+}
+
+.form-page__description {
+  font-family: "Oswald", "Arial", sans-serif;
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 18px;
+  text-transform: uppercase;
+  color: #000000;
+  margin: 37px 0 0;
+}
+
+.form-page__form {
+  margin-top: 40px;
+}
+
+.form-page__required-sign {
+  font-family: "Lato", "Arial", sans-serif;
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 16px;
+  color: #000000;
+}
+
+@media (min-width: $tablet-width) {
+  .form-page__header {
+    font-size: 60px;
+    line-height: 60px;
+  }
+
+  .form-page__description {
+    font-size: 20px;
+    line-height: 30px;
+  }
+}

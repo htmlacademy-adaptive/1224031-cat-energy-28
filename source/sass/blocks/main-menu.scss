@@ -1,0 +1,26 @@
+.main-menu {
+  list-style-type: none;
+  padding: 0;
+  margin: 0;
+}
+
+.main-menu__item {
+  text-align: center;
+  border-top: 1px solid #e6e6e6;
+}
+
+.main-menu__link {
+  display: inline-block;
+  text-decoration: none;
+}
+
+.main-menu__link--header-menu {
+  color: #000000;
+}
+
+@media (min-width: $tablet-width) {
+  .main-menu__item {
+    border: none;
+    margin-right: 25px;
+  }
+}

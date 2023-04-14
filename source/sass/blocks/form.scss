@@ -1,0 +1,63 @@
+.form__fieldset {
+  font-family: "Oswald", "Arial", sans-serif;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 18px;
+  text-transform: uppercase;
+}
+
+.form__header {
+  font-size: 24px;
+  line-height: 26px;
+  color: #000000;
+  text-transform: none;
+}
+
+.form__label--additives {
+  color: #000000;
+}
+
+.form__input {
+  font-family: "Oswald", "Arial", sans-serif;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 18px;
+  text-transform: uppercase;
+  color: #444444;
+}
+
+.form__wrapper {
+  display: flex;
+}
+
+
+@media (min-width: $tablet-width) {
+  .form__header {
+    font-size: 36px;
+    line-height: 36px;
+  }
+
+  .form__fieldset {
+    display: flex;
+    flex-direction: column;
+    font-size: 20px;
+    line-height: 30px;
+  }
+
+  .form__input {
+    font-size: 20px;
+    line-height: 30px;
+    flex-grow: 1;
+  }
+
+  .form__textarea {
+    width: 100%;
+    height: 175px;
+  }
+}
+
+@media (min-width: $desktop-width) {
+  .form__desktop-flex-wrapper {
+    display: flex;
+  }
+}

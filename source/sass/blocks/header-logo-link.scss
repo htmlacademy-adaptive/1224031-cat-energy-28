@@ -1,0 +1,9 @@
+.header-logo-link__image {
+  margin-right: 50px;
+}
+
+@media (min-width: $tablet-width) {
+  .header-logo-link__image {
+    margin-right: 10px;
+  }
+}

@@ -1,0 +1,15 @@
+.catalog-page__header {
+  font-family: "Oswald", "Arial", sans-serif;
+  font-weight: 400;
+  font-size: 36px;
+  line-height: 36px;
+  color: #000000;
+  margin: 27px 0 40px;
+}
+
+@media (min-width: $tablet-width) {
+  .catalog-page__header {
+    font-size: 60px;
+    line-height: 60px;
+  }
+}

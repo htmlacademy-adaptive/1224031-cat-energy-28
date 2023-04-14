@@ -1,0 +1,14 @@
+@media (min-width: $tablet-width) {
+  .food-additives {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 30px 120px;
+  }
+}
+
+@media (min-width: $desktop-width) {
+  .food-additives {
+    display: flex;
+    flex-direction: row;
+  }
+}
