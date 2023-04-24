@@ -14,9 +14,12 @@
     <img class="header-logo-link__image header-logo" src="img/logo-icon.svg" alt="Логотип">
     <img class="header-logo-link__title header-title" src="img/logo-text.svg" alt="Cat Energy">
   </a>
-  <button class="page-header__menu-button"><img src="img/mobile-menu-button.svg" alt=""><span
+  <button class="page-header__menu-button"><img class="page-header__menu-button--open" src="img/mobile-menu-button.svg"
+                                                alt=""><img class="page-header__menu-button--close"
+                                                            src="img/mobile-menu-close-button.svg" alt=""
+                                                            style="display: none"><span
     class="visually-hidden">Открыть меню</span></button>
-  <ul class="page-header__menu main-menu">
+  <ul class="page-header__menu main-menu page-header__menu--closed page-header__menu--no-js">
     <li class="main-menu__item"><a class="main-menu__link main-menu__link--header-menu" href="index.html">Главная</a>
     </li>
     <li class="main-menu__item"><a class="main-menu__link main-menu__link--header-menu" href="catalog.html">Каталог
@@ -205,21 +208,26 @@
             referrerpolicy="no-referrer-when-downgrade"></iframe>
   </section>
 </main>
-<footer class="page-footer container">
-  <img class="page-footer__logo" src="img/logo-text.svg" alt="Логотип">
-  <div class="page-footer__social social">
-    <h2 class="visually-hidden">Ссылки на социальные сети</h2>
-    <a class="social__vk" href="https://vk.com/htmlacademy"><img src="img/vkontakte.svg" alt="ВКонтакте"></a>
-    <a class="social__youtube" href="https://www.youtube.com/user/htmlacademyru"><img src="img/youtube.svg"
-                                                                                      alt="YouTube"></a>
-    <a class="social__telegram" href="https://t.me/htmlacademy"><img src="img/telegram.svg" alt="Telegram"></a>
-  </div>
-  <div class="page-footer__development development">
-    <a class="development__link" href="https://htmlacademy.ru/intensive/adaptive">
-      <span class="development__text">HTML Academy</span>
-      <img src="img/htmlacademy-footer-logo.svg" alt="Логотип HTML Academy">
-    </a>
+<footer class="page-footer">
+  <div class="container">
+    <div class="page-footer__wrapper">
+      <img class="page-footer__logo" src="img/logo-text.svg" alt="Логотип">
+      <div class="page-footer__social social">
+        <h2 class="visually-hidden">Ссылки на социальные сети</h2>
+        <a class="social__item" href="https://vk.com/htmlacademy"><img src="img/vkontakte.svg" alt="ВКонтакте"></a>
+        <a class="social__item" href="https://www.youtube.com/user/htmlacademyru"><img src="img/youtube.svg"
+                                                                                       alt="YouTube"></a>
+        <a class="social__item" href="https://t.me/htmlacademy"><img src="img/telegram.svg" alt="Telegram"></a>
+      </div>
+      <div class="page-footer__development development">
+        <a class="development__link" href="https://htmlacademy.ru/intensive/adaptive">
+          <span class="development__text">HTML Academy</span>
+          <img src="img/htmlacademy-footer-logo.svg" alt="Логотип HTML Academy">
+        </a>
+      </div>
+    </div>
   </div>
 </footer>
+<script src="js/app.js"></script>
 </body>
 </html>

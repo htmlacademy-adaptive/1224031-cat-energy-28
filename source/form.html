@@ -14,9 +14,12 @@
     <img class="header-logo-link__image header-logo" src="img/logo-icon.svg" alt="Логотип">
     <img class="header-logo-link__title header-title" src="img/logo-text.svg" alt="Cat Energy">
   </a>
-  <button class="page-header__menu-button"><img src="img/mobile-menu-button.svg" alt=""><span
+  <button class="page-header__menu-button"><img class="page-header__menu-button--open" src="img/mobile-menu-button.svg"
+                                                alt=""><img class="page-header__menu-button--close"
+                                                            src="img/mobile-menu-close-button.svg" alt=""
+                                                            style="display: none"><span
     class="visually-hidden">Открыть меню</span></button>
-  <ul class="page-header__menu main-menu">
+  <ul class="page-header__menu main-menu page-header__menu--closed page-header__menu--no-js">
     <li class="main-menu__item"><a class="main-menu__link main-menu__link--header-menu" href="index.html">Главная</a>
     </li>
     <li class="main-menu__item"><a class="main-menu__link main-menu__link--header-menu" href="catalog.html">Каталог
@@ -25,9 +28,10 @@
       программы</a></li>
   </ul>
 </header>
-<main class="form-page container">
+<main class="form-page">
+  <div class="container form-page__width-container">
   <h1 class="form-page__header">Подбор программы</h1>
-  <p class="form-page__description">Заполните анкету, и мы подберем
+  <p class="form-page__description">Заполните анкету, и мы подберем<br>
     программу питания для вашего кота</p>
   <form class="form-page__form form" action="https://echo.htmlacademy.ru/" method="post">
     <div class="form__desktop-flex-wrapper">
@@ -46,7 +50,7 @@
           <input class="form__input" type="number" id="age" name="age" value="7">
         </div>
       </fieldset>
-      <fieldset class="form__fieldset program-type">
+      <fieldset class="form__fieldset form__fieldset--bordered program-type">
         <legend class="visually-hidden">Выберите тип программы</legend>
         <div class="form__wrapper">
           <input class="form__radio" type="radio" id="weight-loss" name="weight-loss" checked>
@@ -66,7 +70,7 @@
     <fieldset class="form__fieldset owner-data">
       <legend class="form__header">Контактные данные (владельца кота)</legend>
       <div class="owner-data__flex-wrapper">
-        <div class="form__wrapper">
+        <div class="form__wrapper form__email">
           <label class="form__label" for="email">E-mail:*</label>
           <input class="form__input form__input--icon owner-data__email" type="email" id="email" name="email" placeholder="kuklachev@gmail.com">
         </div>
@@ -84,55 +88,61 @@
     </fieldset>
     <fieldset class="form__fieldset food-additives">
       <legend class="form__header">Дополнительно</legend>
-      <div class="form__wrapper">
+      <div class="form__wrapper food-additives__item">
         <input class="form__checkbox" type="checkbox" id="sweetener" name="sweetener">
-        <label class="form__label form__label--additives" for="sweetener">Cахарозаменитель</label>
+        <label class="form__label--additives" for="sweetener">Cахарозаменитель</label>
       </div>
-      <div class="form__wrapper">
+      <div class="form__wrapper food-additives__item">
         <input class="form__checkbox" type="checkbox" id="water" name="water">
-        <label class="form__label form__label--additives" for="water">Питьевая вода</label>
+        <label class="form__label--additives" for="water">Питьевая вода</label>
       </div>
-      <div class="form__wrapper">
+      <div class="form__wrapper food-additives__item">
         <input class="form__checkbox" type="checkbox" id="milk" name="milk">
-        <label class="form__label form__label--additives" for="milk">Молоко</label>
+        <label class="form__label--additives" for="milk">Молоко</label>
       </div>
-      <div class="form__wrapper">
+      <div class="form__wrapper food-additives__item">
         <input class="form__checkbox" type="checkbox" id="vitamins" name="vitamins">
-        <label class="form__label form__label--additives" for="vitamins">Витамины</label>
+        <label class="form__label--additives" for="vitamins">Витамины</label>
       </div>
     </fieldset>
-    <div class="form__wrapper">
-      <input class="form__submit button" type="submit" value="Отправить заявку">
+    <div class="form__flex-wrapper">
+      <input class="form__submit form__submit--desktop-width button" type="submit" value="Отправить заявку">
       <p class="form-page__required-sign">* — Обязательные поля</p>
     </div>
   </form>
+  </div>
   <section class="cooperate">
-    <div class="cooperate__wrapper">
-      <p class="cooperate__text">Приглашаем к сотрудничеству дилеров!</p>
+    <div class="form-page__width-container cooperate__wrapper">
+      <p class="cooperate__text">Приглашаем<br> к сотрудничеству дилеров!</p>
       <address class="cooperate__address">ул. Большая Конюшенная, д. 19/8 <span class="cooperate__address-city">Санкт-Петербург</span>
       </address>
     </div>
     <iframe class="cooperate__map-frame"
-            src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d999.3082505019979!2d30.323291478803025!3d59.93850553089186!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x4696310fca145cc1%3A0x42b32648d8238007!2z0JHQvtC70YzRiNCw0Y8g0JrQvtC90Y7RiNC10L3QvdCw0Y8g0YPQuy4sIDE5LzgsINCh0LDQvdC60YIt0J_QtdGC0LXRgNCx0YPRgNCzLCAxOTExODY!5e0!3m2!1sru!2sru!4v1681208752885!5m2!1sru!2sru"
-            width="1440" height="400" style="border:0;" allowfullscreen="" loading="lazy"
-            referrerpolicy="no-referrer-when-downgrade"></iframe>
+                  src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d999.3082505019979!2d30.323291478803025!3d59.93850553089186!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x4696310fca145cc1%3A0x42b32648d8238007!2z0JHQvtC70YzRiNCw0Y8g0JrQvtC90Y7RiNC10L3QvdCw0Y8g0YPQuy4sIDE5LzgsINCh0LDQvdC60YIt0J_QtdGC0LXRgNCx0YPRgNCzLCAxOTExODY!5e0!3m2!1sru!2sru!4v1681208752885!5m2!1sru!2sru"
+                  width="1440" height="400" style="border:0;" allowfullscreen="" loading="lazy"
+                  referrerpolicy="no-referrer-when-downgrade"></iframe>
   </section>
 </main>
-<footer class="page-footer container">
-  <img class="page-footer__logo" src="img/logo-text.svg" alt="Логотип">
-  <div class="page-footer__social social">
-    <h2 class="visually-hidden">Ссылки на социальные сети</h2>
-    <a class="social__vk" href="https://vk.com/htmlacademy"><img src="img/vkontakte.svg" alt="ВКонтакте"></a>
-    <a class="social__youtube" href="https://www.youtube.com/user/htmlacademyru"><img src="img/youtube.svg"
-                                                                                      alt="YouTube"></a>
-    <a class="social__telegram" href="https://t.me/htmlacademy"><img src="img/telegram.svg" alt="Telegram"></a>
-  </div>
-  <div class="page-footer__development development">
-    <a class="development__link" href="https://htmlacademy.ru/intensive/adaptive">
-      <span class="development__text">HTML Academy</span>
-      <img src="img/htmlacademy-footer-logo.svg" alt="Логотип HTML Academy">
-    </a>
+<footer class="page-footer">
+  <div class="container">
+    <div class="page-footer__wrapper">
+      <img class="page-footer__logo" src="img/logo-text.svg" alt="Логотип">
+      <div class="page-footer__social social">
+        <h2 class="visually-hidden">Ссылки на социальные сети</h2>
+        <a class="social__item" href="https://vk.com/htmlacademy"><img src="img/vkontakte.svg" alt="ВКонтакте"></a>
+        <a class="social__item" href="https://www.youtube.com/user/htmlacademyru"><img src="img/youtube.svg"
+                                                                                       alt="YouTube"></a>
+        <a class="social__item" href="https://t.me/htmlacademy"><img src="img/telegram.svg" alt="Telegram"></a>
+      </div>
+      <div class="page-footer__development development">
+        <a class="development__link" href="https://htmlacademy.ru/intensive/adaptive">
+          <span class="development__text">HTML Academy</span>
+          <img src="img/htmlacademy-footer-logo.svg" alt="Логотип HTML Academy">
+        </a>
+      </div>
+    </div>
   </div>
 </footer>
+<script src="js/app.js"></script>
 </body>
 </html>

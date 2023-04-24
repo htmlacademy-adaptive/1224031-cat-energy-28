@@ -1,3 +1,7 @@
+.page-header {
+  z-index: 100;
+}
+
 .page-header__logo {
   display: inline-block;
   margin: 10px 65px 28px 20px;
@@ -9,7 +13,23 @@
   font-size: 20px;
   line-height: 20px;
   text-transform: uppercase;
+}
+
+.page-header__menu--closed {
   display: none;
+}
+
+.page-header__menu--no-js {
+  display: block;
+}
+
+.page-header__menu-button {
+  background: transparent;
+  border: none;
+
+  &:active {
+    opacity: 0.3;
+  }
 }
 
 @media (min-width: $tablet-width) {
@@ -28,5 +48,11 @@
 
   .page-header__menu-button {
     display: none;
+  }
+}
+
+@media (min-width: $desktop-width) {
+  .page-header {
+    padding-top: 40px;
   }
 }

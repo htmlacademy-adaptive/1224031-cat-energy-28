@@ -1,8 +1,12 @@
 .example {
   position: relative;
   font-family: "Oswald", "Arial", sans-serif;
+  padding-top: 25px;
+}
+
+.example__background-wrapper {
   background-color: #eaeaea;
-  padding: 25px 0 40px;
+  padding: 25px 20px;
 }
 
 .example__header {
@@ -31,7 +35,8 @@
   line-height: 20px;
   text-transform: uppercase;
   color: #000000;
-  margin: 20px 0 0;
+  margin: 40px 0 20px;
+  text-align: center;
 }
 
 .example__compare {
@@ -41,7 +46,11 @@
 
 @media (min-width: $tablet-width) {
   .example {
-    background-color: #ffffff;
+    background-image: linear-gradient(#ffffff 625px, #eaeaea 450px);
+  }
+
+  .example__background-wrapper {
+    background: none;
   }
 
   .example__header {
@@ -61,19 +70,20 @@
   .example__cost {
     font-size: 20px;
     line-height: 20px;
+    margin-left: 200px;
+    text-align: right;
   }
 
   .example__flex-wrapper {
     display: flex;
     justify-content: center;
-    background-color: #eaeaea;
     height: 460px;
   }
 
   .example__compare {
     width: 560px;
     height: 512px;
-    margin-top: -150px;
+    margin-top: -115px;
   }
 }
 

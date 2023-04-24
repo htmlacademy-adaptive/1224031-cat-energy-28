@@ -3,7 +3,6 @@
 @import "global/fonts";
 @import "global/global";
 
-//Главная страница
 @import "blocks/button";
 @import "blocks/page-header";
 @import "blocks/header-logo-link";
@@ -22,8 +21,8 @@
 @import "blocks/cooperate";
 @import "blocks/page-footer";
 @import "blocks/development";
+@import "blocks/social";
 
-//Каталог
 @import "blocks/catalog-page";
 @import "blocks/catalog-list";
 @import "blocks/catalog-items";
@@ -34,7 +33,6 @@
 @import "blocks/additional-goods";
 @import "blocks/gift-info";
 
-//Форма
 @import "blocks/form-page";
 @import "blocks/form";
 @import "blocks/owner-data";

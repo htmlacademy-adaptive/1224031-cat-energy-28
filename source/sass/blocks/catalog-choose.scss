@@ -1,5 +1,22 @@
 .catalog-choose__item {
+  position: relative;
   margin-top: 20px;
+  padding: 77px 62px 53px 52px;
+}
+
+.catalog-choose__image {
+  position: absolute;
+  left: 22px;
+  top: 21px;
+}
+
+@media (min-width: $tablet-width) {
+  .catalog-choose__image {
+    width: 200px;
+    height: 210px;
+    top: 80px;
+    left: 470px;
+  }
 }
 
 @media (min-width: $desktop-width) {

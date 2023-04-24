@@ -27,9 +27,14 @@
   font-size: 14px;
   line-height: 16px;
   color: #000000;
+  align-self: center;
 }
 
 @media (min-width: $tablet-width) {
+  .form-page__width-container {
+    width: 630px;
+    margin: 0 auto;
+  }
   .form-page__header {
     font-size: 60px;
     line-height: 60px;
@@ -38,5 +43,12 @@
   .form-page__description {
     font-size: 20px;
     line-height: 30px;
+    width: 330px;
+  }
+}
+
+@media (min-width: $desktop-width) {
+  .form-page__width-container {
+    width: 1220px;
   }
 }

@@ -1,10 +1,18 @@
+.example-statistic__data {
+  display: flex;
+  flex-direction: column;
+  &:first-child {
+    margin-right: 32px;
+  }
+}
+
+.example-statistic__flex-wrapper {
+  display: flex;
+}
+
 @media (min-width: $tablet-width) {
   .example-statistic {
     display: flex;
-  }
-
-  .example-statistic__data {
-    display: flex;
-    flex-direction: column;
+    align-items: center;
   }
 }
