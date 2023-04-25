@@ -9,24 +9,34 @@
 </head>
 
 <body>
-<header class="page-header container">
-  <a class="page-header__logo header-logo-link" href="index.html">
-    <img class="header-logo-link__image header-logo" src="img/logo-icon.svg" alt="Логотип">
-    <img class="header-logo-link__title header-title" src="img/logo-text.svg" alt="Cat Energy">
-  </a>
-  <button class="page-header__menu-button"><img class="page-header__menu-button--open" src="img/mobile-menu-button.svg"
-                                                alt=""><img class="page-header__menu-button--close"
-                                                            src="img/mobile-menu-close-button.svg" alt=""
-                                                            style="display: none"><span
-    class="visually-hidden">Открыть меню</span></button>
-  <ul class="page-header__menu main-menu page-header__menu--closed page-header__menu--no-js">
-    <li class="main-menu__item"><a class="main-menu__link main-menu__link--header-menu" href="index.html">Главная</a>
-    </li>
-    <li class="main-menu__item"><a class="main-menu__link main-menu__link--header-menu" href="catalog.html">Каталог
-      продукции</a></li>
-    <li class="main-menu__item"><a class="main-menu__link main-menu__link--header-menu" href="form.html">Подбор
-      программы</a></li>
-  </ul>
+<header class="page-header page-header--bordered">
+  <div class="container">
+    <div class="page-header__flex-wrapper">
+      <a class="page-header__logo header-logo-link" href="index.html">
+        <img class="header-logo-link__image header-logo-link__image--mobile header-logo" src="img/logo-icon-mobile.svg"
+             alt="Логотип">
+        <img class="header-logo-link__image header-logo-link__image--tablet header-logo" src="img/logo-icon-tablet.svg"
+             alt="Логотип">
+        <img class="header-logo-link__image header-logo-link__image--desktop header-logo"
+             src="img/logo-icon-desktop.svg" alt="Логотип">
+        <img class="header-logo-link__title header-title" src="img/logo-text.svg" alt="Cat Energy">
+      </a>
+      <button class="page-header__menu-button"><img class="page-header__menu-button--open"
+                                                    src="img/mobile-menu-button.svg"
+                                                    alt=""><img class="page-header__menu-button--close"
+                                                                src="img/mobile-menu-close-button.svg" alt=""
+                                                                style="display: none"><span
+        class="visually-hidden">Открыть меню</span></button>
+    </div>
+    <ul class="page-header__menu main-menu page-header__menu--closed page-header__menu--no-js">
+      <li class="main-menu__item"><a class="main-menu__link main-menu__link--main-page" href="index.html">Главная</a>
+      </li>
+      <li class="main-menu__item"><a class="main-menu__link main-menu__link--main-page" href="catalog.html">Каталог
+        продукции</a></li>
+      <li class="main-menu__item"><a class="main-menu__link main-menu__link--main-page" href="form.html">Подбор
+        программы</a></li>
+    </ul>
+  </div>
 </header>
 <main class="main-page">
   <section class="program-choose">
@@ -130,12 +140,10 @@
     </div>
   </section>
   <section class="cooperate">
-    <div class="container">
-      <div class="cooperate__wrapper cooperate--main-page-background">
-        <p class="cooperate__text">Приглашаем<br> к сотрудничеству дилеров!</p>
-        <address class="cooperate__address">ул. Большая<br> Конюшенная, д. 19/8 <span class="cooperate__address-city">Санкт-Петербург</span>
-        </address>
-      </div>
+    <div class="cooperate__wrapper cooperate--main-page-background container">
+      <p class="cooperate__text">Приглашаем<br> к сотрудничеству дилеров!</p>
+      <address class="cooperate__address">ул. Большая<br> Конюшенная, д. 19/8 <span class="cooperate__address-city">Санкт-Петербург</span>
+      </address>
     </div>
     <iframe class="cooperate__map-frame"
             src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d999.3082505019979!2d30.323291478803025!3d59.93850553089186!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x4696310fca145cc1%3A0x42b32648d8238007!2z0JHQvtC70YzRiNCw0Y8g0JrQvtC90Y7RiNC10L3QvdCw0Y8g0YPQuy4sIDE5LzgsINCh0LDQvdC60YIt0J_QtdGC0LXRgNCx0YPRgNCzLCAxOTExODY!5e0!3m2!1sru!2sru!4v1681208752885!5m2!1sru!2sru"

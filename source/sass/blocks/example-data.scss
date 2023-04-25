@@ -43,3 +43,9 @@
     background-color: #ffffff;
   }
 }
+
+@media (min-width: $desktop-width) {
+  .example-data__text {
+    background-color: #eaeaea;
+  }
+}

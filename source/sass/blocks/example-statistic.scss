@@ -16,3 +16,13 @@
     align-items: center;
   }
 }
+
+@media (min-width: $desktop-width) {
+  .example-statistic {
+    align-items: flex-start;
+  }
+
+  .example-statistic__flex-wrapper {
+    margin-bottom: 55px;
+  }
+}

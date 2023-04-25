@@ -36,3 +36,18 @@
     line-height: 20px;
   }
 }
+
+@media (min-width: $desktop-width) {
+
+  .additional-item__item-name {
+    margin-right: 165px;
+  }
+
+  .additional-item__info {
+    margin: 25px 0;
+  }
+
+  .additional-item__order {
+    margin: 25px 0 25px auto;
+  }
+}

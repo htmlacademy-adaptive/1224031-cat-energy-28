@@ -6,3 +6,9 @@
   color: #ffffff;
   text-align: center;
 }
+
+@media (min-width: $tablet-width) {
+  .gift-info__text {
+    width: 160px;
+  }
+}

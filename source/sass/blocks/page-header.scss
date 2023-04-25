@@ -1,10 +1,26 @@
 .page-header {
+  position: relative;
   z-index: 100;
 }
 
+.page-header__flex-wrapper {
+  display: flex;
+  justify-content: space-between;
+}
+
+.page-header--bordered {
+  &:after {
+    position: absolute;
+    content: "";
+    height: 1px;
+    background-color: #d9d9d9;
+    width: 100%;
+  }
+}
+
 .page-header__logo {
-  display: inline-block;
-  margin: 10px 65px 28px 20px;
+  display: flex;
+  align-items: center;
 }
 
 .page-header__menu {
@@ -33,10 +49,16 @@
 }
 
 @media (min-width: $tablet-width) {
-  .page-header {
+  .page-header__flex-wrapper {
     display: flex;
     align-items: center;
     justify-content: space-between;
+  }
+
+  .page-header--bordered {
+    &::after {
+      display: none;
+    }
   }
 
   .page-header__menu {

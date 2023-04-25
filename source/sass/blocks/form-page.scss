@@ -1,3 +1,13 @@
+.form-page__container {
+  width: 320px;
+  margin: 0 auto;
+}
+
+.form-page__desktop-container {
+  width: 320px;
+  margin: 0 auto;
+}
+
 .form-page__header {
   font-family: "Oswald", "Arial", sans-serif;
   font-weight: 400;
@@ -28,13 +38,18 @@
   line-height: 16px;
   color: #000000;
   align-self: center;
+  margin-left: -30px;
 }
 
 @media (min-width: $tablet-width) {
-  .form-page__width-container {
+  .form-page__container {
     width: 630px;
-    margin: 0 auto;
   }
+
+  .form-page__desktop-container {
+    width: 630px;
+  }
+
   .form-page__header {
     font-size: 60px;
     line-height: 60px;
@@ -45,10 +60,24 @@
     line-height: 30px;
     width: 330px;
   }
+
+  .form-page__required-sign {
+    margin-left: 0;
+  }
 }
 
 @media (min-width: $desktop-width) {
-  .form-page__width-container {
+  .form-page__container {
     width: 1220px;
+  }
+
+  .form-page__desktop-container {
+    width: auto;
+    margin: 0;
+  }
+
+  .form-page__top-container {
+    width: 1220px;
+    margin: 0 auto;
   }
 }

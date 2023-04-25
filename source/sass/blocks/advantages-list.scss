@@ -77,5 +77,28 @@
 @media (min-width: $desktop-width) {
   .advantages-list {
     display: flex;
+    justify-content: space-between;
+    gap: 0;
+  }
+
+  .advantages-list__item {
+    width: 245px;
+    height: 280px;
+
+    &:nth-child(1) {
+      background-position-y: 0;
+    }
+
+    &:nth-child(2) {
+      background-position: 105px 0;
+    }
+
+    &:nth-child(3) {
+      background-position: 110px 0;
+    }
+
+    &:nth-child(4) {
+      background-position: 105px 0;
+    }
   }
 }

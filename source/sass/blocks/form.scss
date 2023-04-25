@@ -14,18 +14,59 @@
   &::before {
     position: absolute;
     content: "";
-    border: 1px solid #e7e7e7;
+    height: 1px;
+    background-color: #d9d9d9;
     width: 100%;
+    top: -20px;
+  }
+
+  &::after {
+    position: absolute;
+    content: "";
+    height: 1px;
+    background-color: #d9d9d9;
+    width: 100%;
+    top: 130px;
   }
 }
 
+.form__fieldset-cat-data {
+  margin-bottom: 25px;
+}
+
 .form__header {
+  position: relative;
   font-size: 24px;
   line-height: 26px;
   color: #000000;
   text-transform: none;
   padding: 0;
   margin-bottom: 35px;
+  width:100%;
+
+  &:before {
+    content: "";
+    position: absolute;
+    top: 60%;
+    height: 2px;
+    width: 100%;
+    background-color: #68b738;
+    z-index: 0;
+  }
+}
+
+.form__header-text {
+  display: inline-block;
+  background-color: #ffffff;
+  padding: 0 20px;
+}
+
+.form__container {
+  position:relative;
+  display:block;
+  width: $mobile-width;
+  margin: 0 auto;
+  z-index: 10;
 }
 
 .form__label--additives {
@@ -55,11 +96,11 @@
 }
 
 .form__desktop-flex-wrapper {
-  margin-bottom: 70px;
+  margin-bottom: 45px;
 }
 
 .form__textarea {
-  width: 280px;
+  min-width: 300px;
   height: 150px;
   resize: none;
 }
@@ -67,6 +108,12 @@
 .form__flex-wrapper {
   display: flex;
   flex-direction: column;
+  align-items: center;
+}
+
+.form__submit {
+  width: 280px;
+  margin-left: -30px;
 }
 
 
@@ -89,7 +136,14 @@
 
   .form__fieldset--bordered {
     border: 1px solid #e7e7e7;
-    padding: 25px 0 7px 29px;
+
+    &::before {
+      display: none;
+    }
+
+    &::after {
+      display: none;
+    }
   }
 
   .form__input {
@@ -98,12 +152,21 @@
   }
 
   .form__textarea {
-    width: 100%;
+    min-width: 610px;
     height: 175px;
   }
 
   .form__flex-wrapper {
     flex-direction: row;
+  }
+
+  .form__container {
+    width: $tablet-width;
+  }
+
+  .form__submit {
+    margin-left: 0;
+    margin-right: 60px;
   }
 }
 
@@ -123,11 +186,23 @@
     width: 570px;
   }
 
+  .form__wrapper--last-item {
+    margin-bottom: 0;
+  }
+
   .form__email {
     margin-right: 80px;
   }
 
-  .form__submit--desktop-width {
+  .form__textarea {
+    min-width: 1200px;
+  }
+
+  .form__submit {
     width: 570px;
+  }
+
+  .form__container {
+    width: $desktop-width;
   }
 }

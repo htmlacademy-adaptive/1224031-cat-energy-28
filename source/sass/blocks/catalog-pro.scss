@@ -67,3 +67,21 @@
     margin-left: 25px;
   }
 }
+
+@media (min-width: $desktop-width) {
+  .catalog-pro__header {
+    text-align: center;
+    margin-bottom: 70px;
+  }
+
+  .catalog-pro__link {
+    margin-top: 0;
+  }
+
+  .catalog-pro__image {
+    left: 33px;
+    top: 47px;
+    width: 134px;
+    height: 100px;
+  }
+}

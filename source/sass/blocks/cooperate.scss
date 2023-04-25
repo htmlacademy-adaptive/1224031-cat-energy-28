@@ -1,6 +1,7 @@
 .cooperate {
   position: relative;
   background-color: #f2f2f2;
+  min-width: $mobile-width;
 }
 
 .cooperate__wrapper {
@@ -68,20 +69,20 @@
 
   .cooperate__text {
     width: 160px;
+    margin-right: 80px;
   }
 
   .cooperate__address {
-    width: 175px;
+    width: 220px;
   }
   .cooperate__wrapper {
     background-color: #ffffff;
     position: absolute;
-    left: 0;
-    top: 0;
-    z-index: -1;
+    top: 95px;
+    left: 200px;
+    z-index: 1;
     display: flex;
-    width: 565px;
-    height: 198px;
-    padding: 0;
+    justify-content: center;
+    width: 490px;
   }
 }

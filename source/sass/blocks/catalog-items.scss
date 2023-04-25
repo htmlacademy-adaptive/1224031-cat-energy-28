@@ -32,15 +32,31 @@
   .catalog-items__more-items-image {
     width: 60px;
     height: 60px;
+    margin: 60px 0;
   }
 
   .catalog-items__more-items {
     font-size: 20px;
     line-height: 22px;
+    margin-top: 0;
+    margin-bottom: 23px;
   }
 
   .catalog-items__description {
     font-size: 16px;
     line-height: 18px;
+    margin-top: 0;
+    margin-bottom: 90px;
+  }
+
+  .catalog-items__more-items-button {
+    margin-top: 0;
+    margin-bottom: 40px;
+  }
+}
+
+@media (min-width: $desktop-width) {
+  .catalog-items__description {
+    width: 165px;
   }
 }

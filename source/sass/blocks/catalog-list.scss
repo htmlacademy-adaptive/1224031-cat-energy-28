@@ -13,14 +13,21 @@
   .catalog-list {
     display: grid;
     grid-template-columns: repeat(2, 324px);
-    gap: 60px;
+    gap: 140px 60px;
   }
 
   .catalog-list__item {
-    height: 511px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: flex-end;
     padding: 0;
     border: none;
     background-color: #f2f2f2;
+
+    &:last-child {
+      align-self: center;
+    }
   }
 
   .catalog-list__expand-block {

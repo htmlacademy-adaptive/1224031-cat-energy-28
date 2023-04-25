@@ -15,9 +15,6 @@
   padding: 22px 0 24px;
   width: 100%;
   text-align: center;
-}
-
-.main-menu__link--header-menu {
   color: #000000;
 }
 
@@ -25,5 +22,16 @@
   .main-menu__item {
     border: none;
     margin-right: 25px;
+  }
+}
+
+@media (min-width: $desktop-width) {
+  .page-header__menu {
+    font-size: 20px;
+    line-height: 30px;
+  }
+
+  .main-menu__link--main-page {
+    color: #ffffff;
   }
 }

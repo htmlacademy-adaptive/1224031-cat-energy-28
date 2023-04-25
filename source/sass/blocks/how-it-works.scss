@@ -27,3 +27,9 @@
     border-bottom: 1px solid #e6e6e6;
   }
 }
+
+@media (min-width: $desktop-width) {
+  .how-it-works__advantages {
+    border-bottom: none;
+  }
+}

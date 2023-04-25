@@ -18,4 +18,20 @@
     font-size: 16px;
     line-height: 16px;
   }
+
+  .product-information__type {
+    border-bottom: 1px solid #cdcdcd;
+    padding-top: 5px;
+    padding-bottom: 8px;
+  }
+
+  .product-information__value {
+    margin-left: 150px;
+  }
+}
+
+@media (min-width: $desktop-width) {
+  .product-information__value {
+    margin-left: 80px;
+  }
 }
