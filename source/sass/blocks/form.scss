@@ -59,12 +59,13 @@
   display: inline-block;
   background-color: #ffffff;
   padding: 0 20px;
+  margin-left: -20px;
 }
 
 .form__container {
   position:relative;
   display:block;
-  width: $mobile-width;
+  width: 320px;
   margin: 0 auto;
   z-index: 10;
 }
@@ -108,7 +109,6 @@
 .form__flex-wrapper {
   display: flex;
   flex-direction: column;
-  align-items: center;
 }
 
 .form__submit {
@@ -161,7 +161,7 @@
   }
 
   .form__container {
-    width: $tablet-width;
+    width: 630px;
   }
 
   .form__submit {
@@ -180,6 +180,10 @@
     &:first-child {
       margin-right: 80px;
     }
+  }
+
+  .form__fieldset--bordered {
+    width: auto;
   }
 
   .form__wrapper {
@@ -203,6 +207,6 @@
   }
 
   .form__container {
-    width: $desktop-width;
+    width: 1220px;
   }
 }

@@ -21,10 +21,19 @@
 }
 
 .additional-goods__item {
-  padding: 13px 20px 20px 20px;
+  padding: 13px 0 20px 0;
+  border-bottom: 1px solid #cdcdcd;
+}
+
+.additional-goods__item--first-item {
+  border-top: 1px solid #cdcdcd;;
 }
 
 .additional-goods__gift {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
   background-color: #68b738;
   background-image: url("../../img/cat-in-a-case-background.jpg");
   background-repeat: no-repeat;

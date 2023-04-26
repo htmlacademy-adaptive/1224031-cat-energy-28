@@ -55,6 +55,11 @@
     justify-content: space-between;
   }
 
+  .page-header__tablet-flex-wrapper {
+    display: flex;
+    justify-content: space-between;
+  }
+
   .page-header--bordered {
     &::after {
       display: none;

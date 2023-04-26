@@ -26,6 +26,7 @@
 .catalog-items__more-items-button {
   display: block;
   margin-top: 20px;
+  width: 100%;
 }
 
 @media (min-width: $tablet-width) {
@@ -52,6 +53,7 @@
   .catalog-items__more-items-button {
     margin-top: 0;
     margin-bottom: 40px;
+    width: 250px;
   }
 }
 

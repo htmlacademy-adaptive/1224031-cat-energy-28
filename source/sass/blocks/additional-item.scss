@@ -16,7 +16,13 @@
   margin-top: 13px;
 }
 
+.additional-item-info__count {
+  display: flex;
+  justify-content: space-between;
+}
+
 .additional-item__order {
+  width: 100%;
   margin-top: 15px;
 }
 
@@ -39,15 +45,11 @@
 
 @media (min-width: $desktop-width) {
 
-  .additional-item__item-name {
-    margin-right: 165px;
-  }
-
   .additional-item__info {
     margin: 25px 0;
   }
 
   .additional-item__order {
-    margin: 25px 0 25px auto;
+    width: auto;
   }
 }
