@@ -9,7 +9,7 @@
 }
 
 .page-header--bordered {
-  &:after {
+  &::after {
     position: absolute;
     content: "";
     height: 1px;

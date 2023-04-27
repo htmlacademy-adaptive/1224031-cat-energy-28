@@ -82,6 +82,7 @@
     margin-top: 0;
     margin-bottom: 40px;
   }
+
   .catalog-item__flex-wrapper {
     flex-direction: column;
     align-items: center;
@@ -89,11 +90,11 @@
 }
 
 @media (min-width: $desktop-width) {
-
   .catalog-item__header {
     width: 150px;
     text-align: center;
   }
+
   .catalog-item__order-button {
     width: auto;
     padding: 10px 55px;
