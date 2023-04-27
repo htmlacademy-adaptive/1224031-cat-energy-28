@@ -6,7 +6,10 @@
 }
 
 .product-information__type {
+  display: flex;
+  justify-content: space-between;
   margin: 0;
+  width: 140px;
 }
 
 .product-information__value {
@@ -17,5 +20,17 @@
   .product-information {
     font-size: 16px;
     line-height: 16px;
+  }
+
+  .product-information__type {
+    border-bottom: 1px solid #cdcdcd;
+    padding-top: 5px;
+    padding-bottom: 8px;
+  }
+}
+
+@media (min-width: $desktop-width) {
+  .product-information__type {
+    width: auto;
   }
 }

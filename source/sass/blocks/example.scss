@@ -1,8 +1,13 @@
 .example {
   position: relative;
   font-family: "Oswald", "Arial", sans-serif;
+  padding-top: 25px;
   background-color: #eaeaea;
-  padding: 25px 0 40px;
+  min-width: 320px;
+}
+
+.example__background-wrapper {
+  padding: 25px 20px;
 }
 
 .example__header {
@@ -18,7 +23,7 @@
   font-weight: 400;
   font-size: 14px;
   line-height: 18px;
-  margin: 40px 0 0;
+  margin: 0;
 }
 
 .example__stats {
@@ -31,7 +36,8 @@
   line-height: 20px;
   text-transform: uppercase;
   color: #000000;
-  margin: 20px 0 0;
+  margin: 40px 0 20px;
+  text-align: center;
 }
 
 .example__compare {
@@ -41,7 +47,11 @@
 
 @media (min-width: $tablet-width) {
   .example {
-    background-color: #ffffff;
+    background-image: linear-gradient(#ffffff 625px, #eaeaea 450px);
+  }
+
+  .example__background-wrapper {
+    background: none;
   }
 
   .example__header {
@@ -61,30 +71,32 @@
   .example__cost {
     font-size: 20px;
     line-height: 20px;
+    margin-left: 200px;
+    text-align: right;
   }
 
   .example__flex-wrapper {
     display: flex;
     justify-content: center;
-    background-color: #eaeaea;
     height: 460px;
   }
 
   .example__compare {
     width: 560px;
     height: 512px;
-    margin-top: -150px;
+    margin-top: -115px;
   }
 }
 
 @media (min-width: $desktop-width) {
   .example {
-    background-color: #f2f2f2;
     padding-top: 0;
+    background-image: linear-gradient(#ffffff 170px, #eaeaea 170px);
   }
 
   .example__header {
     background-color: #ffffff;
+    margin-bottom: 150px;
   }
 
   .example__flex-wrapper {
@@ -99,9 +111,19 @@
   .example__stats {
     display: flex;
     flex-direction: column;
+    margin-bottom: 50px;
   }
 
   .example-statistic__flex-wrapper {
     display: flex;
+  }
+
+  .example__text {
+    width: 440px;
+    margin-bottom: 70px;
+  }
+
+  .example__cost {
+    margin: 0;
   }
 }

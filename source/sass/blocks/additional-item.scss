@@ -16,7 +16,13 @@
   margin-top: 13px;
 }
 
+.additional-item-info__count {
+  display: flex;
+  justify-content: space-between;
+}
+
 .additional-item__order {
+  width: 100%;
   margin-top: 15px;
 }
 
@@ -34,5 +40,28 @@
   .additional-item__info {
     font-size: 16px;
     line-height: 20px;
+  }
+}
+
+@media (min-width: $desktop-width) {
+  .additional-item__info {
+    margin: 25px 0;
+    width: 100%;
+  }
+
+  .additional-item__item-name {
+    width: 100%;
+  }
+
+  .additional-item-info__count {
+    width: 100%;
+  }
+
+  .additional-item-info__price {
+    margin-right: 40px;
+  }
+
+  .additional-item__order {
+    width: auto;
   }
 }

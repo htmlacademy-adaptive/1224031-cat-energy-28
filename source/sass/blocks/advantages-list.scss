@@ -4,6 +4,20 @@
   list-style-type: none;
 }
 
+.advantages-list__item {
+  display: flex;
+  align-items: center;
+  margin-bottom: 20px;
+
+  &:last-child {
+    margin-bottom: 0;
+  }
+}
+
+.advantages-list__icon {
+  margin-right: 20px;
+}
+
 .advantages-list__description {
   font-family: "Lato", "Arial", sans-serif;
   font-weight: 400;
@@ -15,35 +29,38 @@
 @media (min-width: $tablet-width) {
   .advantages-list {
     display: grid;
-    grid-template-columns: 1fr 1fr;
+    grid-template-columns: 243px 243px;
     gap: 37px 150px;
   }
 
   .advantages-list__item {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
     height: 230px;
 
     &:nth-child(1) {
       background-image: url("../img/advantages-list-background-number-1.svg");
       background-repeat: no-repeat;
-      background-position: right;
+      background-position: 125px;
     }
 
     &:nth-child(2) {
       background-image: url("../img/advantages-list-background-number-2.svg");
       background-repeat: no-repeat;
-      background-position: right;
+      background-position: 125px;
     }
 
     &:nth-child(3) {
       background-image: url("../img/advantages-list-background-number-3.svg");
       background-repeat: no-repeat;
-      background-position: right;
+      background-position: 125px;
     }
 
     &:nth-child(4) {
       background-image: url("../img/advantages-list-background-number-4.svg");
       background-repeat: no-repeat;
-      background-position: right;
+      background-position: 125px;
     }
   }
 
@@ -51,10 +68,37 @@
     font-size: 16px;
     line-height: 24px;
   }
+
+  .advantages-list__icon {
+    margin-bottom: 30px;
+  }
 }
 
 @media (min-width: $desktop-width) {
   .advantages-list {
     display: flex;
+    justify-content: space-between;
+    gap: 0;
+  }
+
+  .advantages-list__item {
+    width: 245px;
+    height: 280px;
+
+    &:nth-child(1) {
+      background-position-y: 0;
+    }
+
+    &:nth-child(2) {
+      background-position: 105px 0;
+    }
+
+    &:nth-child(3) {
+      background-position: 110px 0;
+    }
+
+    &:nth-child(4) {
+      background-position: 105px 0;
+    }
   }
 }

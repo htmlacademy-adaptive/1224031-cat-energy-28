@@ -1,9 +1,16 @@
+.cooperate {
+  position: relative;
+  background-color: #f2f2f2;
+  min-width: $mobile-width;
+}
+
 .cooperate__wrapper {
-  background-color: #ffffff;
+  display: flex;
+  align-items: center;
 }
 
 .cooperate--main-page-background {
-  background-color: #f2f2f2;
+  background-color: #ffffff;
 }
 
 .cooperate__text {
@@ -14,6 +21,7 @@
   text-transform: uppercase;
   color: #111111;
   margin: 0;
+  width: 250px;
 }
 
 .cooperate__address {
@@ -25,14 +33,29 @@
 }
 
 .cooperate__map-frame {
-  width: 320px;
+  position: relative;
+  display: block;
+  width: 100%;
   height: 362px;
 }
 
 @media (min-width: $tablet-width) {
   .cooperate__map-frame {
-    width: 710px;
+    width: 100%;
     height: 400px;
+  }
+
+  .cooperate__wrapper {
+    padding: 60px 40px;
+  }
+
+  .cooperate__text {
+    margin-right: 310px;
+  }
+
+  .cooperate__address-city {
+    display: inline-block;
+    margin-top: 25px;
   }
 }
 
@@ -40,27 +63,26 @@
 @media (min-width: $desktop-width) {
   .cooperate {
     position: relative;
+    background-color: transparent;
   }
 
   .cooperate__text {
     width: 160px;
+    margin-right: 80px;
   }
 
   .cooperate__address {
-    width: 175px;
-  }
-
-  .cooperate__map-frame {
-    position: absolute;
-    z-index: -1;
-    top: 0;
-    left: 0;
-    width: 100%;
+    width: 220px;
   }
 
   .cooperate__wrapper {
+    background-color: #ffffff;
+    position: absolute;
+    top: 95px;
+    left: 200px;
+    z-index: 1;
     display: flex;
-    width: 365px;
-    margin-bottom: 340px;
+    justify-content: center;
+    width: 490px;
   }
 }

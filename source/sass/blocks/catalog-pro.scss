@@ -1,12 +1,11 @@
 .catalog-pro {
   font-family: "Oswald", "Arial", sans-serif;
   background-color: #f2f2f2;
-  padding: 21px 33px 18px 20px;
 }
 
 .catalog-pro__header {
   font-weight: 400;
-  margin: 0;
+  margin: 9px 0 0 80px;
   font-size: 24px;
   line-height: 37px;
   text-transform: uppercase;
@@ -17,6 +16,8 @@
   font-size: 14px;
   line-height: 18px;
   margin: 20px 0 0;
+  padding-bottom: 23px;
+  border-bottom: 1px solid #d9d9d9;
 }
 
 .catalog-pro__link {
@@ -26,10 +27,10 @@
   color: #000000;
   text-decoration: none;
   text-transform: uppercase;
-  margin-top: 38px;
+  margin-top: 15px;
 }
 
-.catalog-pro__image {
+.catalog-pro__arrow-image {
   margin-left: 15px;
 }
 
@@ -38,12 +39,15 @@
     font-size: 36px;
     line-height: 36px;
     color: #000000;
+    margin-left: 0;
   }
 
   .catalog-pro__text {
+    width: 340px;
     font-size: 16px;
     line-height: 24px;
     color: #000000;
+    border: none;
   }
 
   .catalog-pro__link {
@@ -53,6 +57,31 @@
   }
 
   .catalog-pro__image {
+    width: 268px;
+    height: 200px;
+    top: 95px;
+    left: 420px;
+  }
+
+  .catalog-pro__arrow-image {
     margin-left: 25px;
+  }
+}
+
+@media (min-width: $desktop-width) {
+  .catalog-pro__header {
+    text-align: center;
+    margin-bottom: 70px;
+  }
+
+  .catalog-pro__link {
+    margin-top: 0;
+  }
+
+  .catalog-pro__image {
+    left: 33px;
+    top: 47px;
+    width: 134px;
+    height: 100px;
   }
 }

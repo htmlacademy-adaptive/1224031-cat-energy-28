@@ -2,8 +2,38 @@
   margin-right: 50px;
 }
 
+.header-logo-link__image--tablet {
+  display: none;
+}
+
+.header-logo-link__image--desktop {
+  display: none;
+}
+
 @media (min-width: $tablet-width) {
   .header-logo-link__image {
-    margin-right: 10px;
+    margin-right: 20px;
+  }
+
+  .header-logo-link__image--mobile {
+    display: none;
+  }
+
+  .header-logo-link__image--tablet {
+    display: inline-block;
+  }
+}
+
+@media (min-width: $desktop-width) {
+  .header-logo-link__image--tablet {
+    display: none;
+  }
+
+  .header-logo-link__image--desktop {
+    display: inline-block;
+  }
+
+  .header-logo-link__title {
+    transform: scale(1.2);
   }
 }
