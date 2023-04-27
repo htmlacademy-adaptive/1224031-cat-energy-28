@@ -11,13 +11,4 @@
     display: flex;
     flex-direction: row;
   }
-
-  .food-additives__item {
-    width: auto;
-    margin-right: 100px;
-
-    &:last-child {
-      margin-right: 0;
-    }
-  }
 }

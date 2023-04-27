@@ -27,14 +27,10 @@
     padding-top: 5px;
     padding-bottom: 8px;
   }
-
-  .product-information__value {
-
-  }
 }
 
 @media (min-width: $desktop-width) {
-  .product-information__value {
-    width: 170px;
+  .product-information__type {
+    width: auto;
   }
 }

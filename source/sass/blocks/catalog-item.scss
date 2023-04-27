@@ -24,18 +24,16 @@
   margin-top: 13px;
 }
 
-.catalog-item__image {
-  margin: 0 35px;
-}
-
 .catalog-item__image--500 {
   width: 70px;
   height: 80px;
+  margin: 0 35px;
 }
 
 .catalog-item__image--1000 {
   width: 85px;
   height: 100px;
+  margin: 0 25px;
 }
 
 .catalog-item__flex-wrapper {
@@ -99,5 +97,9 @@
   .catalog-item__order-button {
     width: auto;
     padding: 10px 55px;
+  }
+
+  .catalog-item__info {
+    width: 170px;
   }
 }

@@ -28,14 +28,14 @@
                                                                 style="display: none"><span
         class="visually-hidden">Открыть меню</span></button>
     </div>
-      <ul class="page-header__menu main-menu page-header__menu--closed page-header__menu--no-js">
-        <li class="main-menu__item"><a class="main-menu__link" href="index.html">Главная</a>
-        </li>
-        <li class="main-menu__item"><a class="main-menu__link" href="catalog.html">Каталог
-          продукции</a></li>
-        <li class="main-menu__item"><a class="main-menu__link" href="form.html">Подбор
-          программы</a></li>
-      </ul>
+    <ul class="page-header__menu main-menu page-header__menu--closed page-header__menu--no-js">
+      <li class="main-menu__item"><a class="main-menu__link" href="index.html">Главная</a>
+      </li>
+      <li class="main-menu__item"><a class="main-menu__link" href="catalog.html">Каталог
+        продукции</a></li>
+      <li class="main-menu__item"><a class="main-menu__link" href="form.html">Подбор
+        программы</a></li>
+    </ul>
 
   </div>
 </header>
@@ -53,11 +53,11 @@
           <div class="form-page__desktop-container">
             <div class="form__wrapper">
               <label class="form__label" for="name">Имя:*</label>
-              <input class="form__input" type="text" id="name" name="name" placeholder="Барсик">
+              <input class="form__input" type="text" id="name" name="name" placeholder="Барсик" required>
             </div>
             <div class="form__wrapper">
               <label class="form__label" for="weight">Вес (кг):*</label>
-              <input class="form__input" type="number" id="weight" name="weight" value="7">
+              <input class="form__input" type="number" id="weight" name="weight" value="7" required>
             </div>
             <div class="form__wrapper">
               <label class="form__label" for="age">Возраст (лет):</label>
@@ -69,16 +69,25 @@
           <legend class="visually-hidden">Выберите тип программы</legend>
           <div class="form-page__desktop-container">
             <div class="form__wrapper">
-              <input class="form__radio" type="radio" id="weight-loss" name="program-type" checked>
-              <label class="form__label" for="weight-loss">Похудение</label>
+              <label class="form__label">
+                <input class="form__radio" type="radio" name="program-type" value="weight-loss" checked>
+                <span class="form__radio-styled"></span>
+                Похудение
+              </label>
             </div>
             <div class="form__wrapper">
-              <input class="form__radio" type="radio" id="weight-gain" name="program-type">
-              <label class="form__label" for="weight-gain">Набор массы</label>
+              <label class="form__label">
+                <input class="form__radio" type="radio" name="program-type" value="weight-gain">
+                <span class="form__radio-styled"></span>
+                Набор массы
+              </label>
             </div>
             <div class="form__wrapper form__wrapper--last-item">
-              <input class="form__radio" type="radio" id="dont-know" name="program-type">
-              <label class="form__label" for="dont-know">Не знаю (Нужен ваш совет)</label>
+              <label class="form__label">
+                <input class="form__radio" type="radio" name="program-type" value="dont-know">
+                <span class="form__radio-styled"></span>
+                Не знаю (Нужен ваш совет)
+              </label>
             </div>
           </div>
         </fieldset>
@@ -92,12 +101,12 @@
           <div class="form__wrapper form__email">
             <label class="form__label" for="email">E-mail:*</label>
             <input class="form__input form__input--icon owner-data__email" type="email" id="email" name="email"
-                   placeholder="kuklachev@gmail.com">
+                   placeholder="kuklachev@gmail.com" required>
           </div>
           <div class="form__wrapper">
             <label class="form__label" for="phone">Телефон:*</label>
             <input class="form__input form__input--icon owner-data__phone" type="tel" id="phone" name="phone"
-                   placeholder="8 (960) 900-60-90">
+                   placeholder="8 (960) 900-60-90" required>
           </div>
         </div>
       </div>
@@ -106,7 +115,7 @@
       <legend class="form__header"><span class="form__container"><span
         class="form__header-text">Комментарий</span></span></legend>
       <div class="form-page__container">
-        <label><textarea class="form__input form__textarea">Расскажите обо всех повадках кота</textarea></label>
+        <label><textarea class="form__input form__textarea" placeholder="Расскажите обо всех повадках кота"></textarea></label>
       </div>
     </fieldset>
     <fieldset class="form__fieldset food-additives">
@@ -114,20 +123,32 @@
         class="form__header-text">Дополнительно</span></span></legend>
       <div class="form-page__container food-additives__wrapper">
         <div class="form__wrapper food-additives__item">
-          <input class="form__checkbox" type="checkbox" id="sweetener" name="sweetener">
-          <label class="form__label--additives" for="sweetener">Cахарозаменитель</label>
+          <label class="form__label--additives">
+            <input class="form__checkbox" type="checkbox" id="sweetener" name="sweetener">
+            <span class="form__checkbox-styled"></span>
+            Cахарозаменитель
+          </label>
         </div>
         <div class="form__wrapper food-additives__item">
-          <input class="form__checkbox" type="checkbox" id="water" name="water">
-          <label class="form__label--additives" for="water">Питьевая вода</label>
+          <label class="form__label--additives">
+            <input class="form__checkbox" type="checkbox" id="water" name="water">
+            <span class="form__checkbox-styled"></span>
+            Питьевая вода
+          </label>
         </div>
         <div class="form__wrapper food-additives__item">
-          <input class="form__checkbox" type="checkbox" id="milk" name="milk">
-          <label class="form__label--additives" for="milk">Молоко</label>
+          <label class="form__label--additives">
+            <input class="form__checkbox" type="checkbox" id="milk" name="milk">
+            <span class="form__checkbox-styled"></span>
+            Молоко
+          </label>
         </div>
         <div class="form__wrapper food-additives__item">
-          <input class="form__checkbox" type="checkbox" id="vitamins" name="vitamins">
-          <label class="form__label--additives" for="vitamins">Витамины</label>
+          <label class="form__label--additives">
+            <input class="form__checkbox" type="checkbox" id="vitamins" name="vitamins">
+            <span class="form__checkbox-styled"></span>
+            Витамины
+          </label>
         </div>
       </div>
     </fieldset>
