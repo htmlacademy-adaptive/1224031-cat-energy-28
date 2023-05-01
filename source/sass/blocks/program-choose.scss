@@ -3,6 +3,11 @@
   background-image: url("../../img/green-cat-background.jpg");
   background-repeat: no-repeat;
   margin-bottom: 140px;
+
+  @media (min-resolution: 2dppx) {
+    background-image: url("../../img/green-cat-background@2x.jpg");
+    background-size: cover;
+  }
 }
 
 .program-choose__button {
@@ -52,7 +57,7 @@
       left: 50%;
       right: 0;
       content: "";
-      background-image: url"(../img/desktop-cat-background.jpg)";
+      background-image: url("../img/desktop-cat-background.jpg");
       background-size: cover;
       background-position: 0;
       background-repeat: no-repeat;

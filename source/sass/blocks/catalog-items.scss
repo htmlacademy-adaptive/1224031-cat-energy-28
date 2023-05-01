@@ -27,6 +27,10 @@
   display: block;
   margin-top: 20px;
   width: 100%;
+
+  &:hover {
+    background-color: #ebebeb;
+  }
 }
 
 @media (min-width: $tablet-width) {

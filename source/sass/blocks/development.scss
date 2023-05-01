@@ -5,6 +5,18 @@
   line-height: 19px;
   text-decoration: none;
   color: #444444;
+
+  &:hover .development__image  {
+    fill: #68b738;
+  }
+
+  &:active {
+    opacity: 0.3;
+  }
+}
+
+.development__image {
+  fill: #666666;
 }
 
 @media (min-width: $tablet-width) {

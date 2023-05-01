@@ -24,18 +24,6 @@
   margin-top: 13px;
 }
 
-.catalog-item__image--500 {
-  width: 70px;
-  height: 80px;
-  margin: 0 35px;
-}
-
-.catalog-item__image--1000 {
-  width: 85px;
-  height: 100px;
-  margin: 0 25px;
-}
-
 .catalog-item__flex-wrapper {
   display: flex;
 }
@@ -53,18 +41,13 @@
 
   .catalog-item__image {
     margin-bottom: 35px;
-  }
-
-  .catalog-item__image--500 {
-    width: 160px;
-    height: 170px;
-    margin-top: -40px;
+    width: 162px;
+    height: 173px;
   }
 
   .catalog-item__image--1000 {
     width: 168px;
     height: 200px;
-    margin-top: -60px;
   }
 
   .catalog-item__header {
@@ -102,5 +85,15 @@
 
   .catalog-item__info {
     width: 170px;
+  }
+
+  .catalog-item__image {
+    width: 162px;
+    height: 173px;
+  }
+
+  .catalog-item__image--1000 {
+    width: 172px;
+    height: 196px;
   }
 }

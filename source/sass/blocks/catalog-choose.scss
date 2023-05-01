@@ -1,7 +1,7 @@
 .catalog-choose__item {
   position: relative;
   margin-top: 20px;
-  padding: 77px 62px 53px 52px;
+  padding: 30px 20px;
 }
 
 .catalog-choose__image {
@@ -11,6 +11,10 @@
 }
 
 @media (min-width: $tablet-width) {
+  .catalog-choose__item {
+    padding: 77px 62px 53px 52px;
+  }
+
   .catalog-choose__image {
     width: 200px;
     height: 210px;
