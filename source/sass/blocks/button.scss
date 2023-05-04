@@ -11,6 +11,16 @@
   padding: 7px 44px;
   cursor: pointer;
   border: none;
+
+  &:hover {
+    background-color: #5eaa2f;
+  }
+
+  &:active {
+    .button__text {
+      opacity: 0.3;
+    }
+  }
 }
 
 .button--expand-catalog {

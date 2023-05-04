@@ -71,10 +71,12 @@
 }
 
 .form__label--additives {
+  cursor: pointer;
   color: #000000;
 }
 
 .form__label {
+  cursor: pointer;
   margin-right: 10px;
 }
 
@@ -88,6 +90,30 @@
   border: 1px solid #e7e7e7;
   flex-grow: 1;
   padding: 11px 0 11px 20px;
+
+  &:hover {
+    border-color: #cdcdcd;
+  }
+
+  &:active {
+    border-color: #444444;
+  }
+
+  &:invalid:not(:placeholder-shown) {
+    border-color: #ff8282;
+  }
+
+  &:focus::-webkit-input-placeholder {
+    color: transparent;
+  }
+
+  &:focus:-moz-placeholder {
+    color: transparent;
+  }
+
+  &:focus::-moz-placeholder {
+    color: transparent;
+  }
 }
 
 .form__radio-styled {
@@ -121,6 +147,14 @@
     top: 8px;
     left: 8px;
   }
+
+  &:hover + .form__radio-styled {
+    border-color: #bababa;
+  }
+
+  &:active + .form__radio-styled {
+    opacity: 0.3;
+  }
 }
 
 .form__checkbox-styled {
@@ -153,6 +187,14 @@
     background-size: cover;
     top: 1px;
     left: 4px;
+  }
+
+  &:hover + .form__checkbox-styled {
+    border-color: #bababa;
+  }
+
+  &:active + .form__checkbox-styled {
+    opacity: 0.3;
   }
 }
 

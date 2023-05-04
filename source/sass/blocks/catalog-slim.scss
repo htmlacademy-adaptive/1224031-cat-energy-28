@@ -22,13 +22,23 @@
 }
 
 .catalog-slim__link {
-  display: inline-block;
+  display: flex;
   font-size: 16px;
   line-height: 16px;
   color: #000000;
   text-decoration: none;
   text-transform: uppercase;
   margin-top: 15px;
+
+  &:hover {
+    .catalog-slim__arrow-image {
+      width: 32px;
+    }
+  }
+
+  &:active {
+    opacity: 0.6;
+  }
 }
 
 .catalog-slim__arrow-image {

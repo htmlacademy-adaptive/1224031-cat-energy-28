@@ -21,6 +21,14 @@
 .page-header__logo {
   display: flex;
   align-items: center;
+
+  &:hover {
+    opacity: 0.8;
+  }
+
+  &:active {
+    opacity: 0.6;
+  }
 }
 
 .page-header__menu {
@@ -44,7 +52,7 @@
   border: none;
 
   &:active {
-    opacity: 0.3;
+    opacity: 0.6;
   }
 }
 
