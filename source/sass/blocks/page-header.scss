@@ -6,6 +6,7 @@
 .page-header__flex-wrapper {
   display: flex;
   justify-content: space-between;
+  padding: 12px 13px 10px 20px;
 }
 
 .page-header--bordered {
@@ -45,6 +46,7 @@
 
 .page-header__menu--no-js {
   display: block;
+  position: static;
 }
 
 .page-header__menu-button {
@@ -66,6 +68,7 @@
   .page-header__tablet-flex-wrapper {
     display: flex;
     justify-content: space-between;
+    align-items: center;
   }
 
   .page-header--bordered {

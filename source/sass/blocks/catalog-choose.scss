@@ -1,13 +1,70 @@
+.catalog-choose {
+  font-family: "Oswald", "Arial", sans-serif;
+  font-weight: 400;
+  background-color: #ffffff;
+}
+
 .catalog-choose__item {
   position: relative;
   margin-top: 20px;
-  padding: 30px 20px;
+  background-color: #f2f2f2;
+}
+
+.catalog-choose__header {
+  font-weight: 400;
+  font-size: 24px;
+  line-height: 37px;
+  text-transform: uppercase;
+  padding-top: 30px;
+  padding-bottom: 30px;
+  margin: 0 0 0 92px;
+}
+
+.catalog-choose__text {
+  font-family: "Lato", "Arial", sans-serif;
+  font-size: 14px;
+  line-height: 18px;
+  padding-bottom: 21px;
+  border-bottom: 1px solid #d9d9d9;
+  margin: 0 0 0 21px;
+}
+
+.catalog-choose__link {
+  display: flex;
+  font-size: 16px;
+  line-height: 16px;
+  color: #000000;
+  text-decoration: none;
+  text-transform: uppercase;
+  margin-top: 19px;
+  margin-left: 21px;
+  padding-bottom: 23px;
+
+  &:hover {
+
+  }
+    .catalog-slim__arrow-image {
+      width: 32px;
+    }
+
+    &:active {
+      opacity: 0.6;
+    }
 }
 
 .catalog-choose__image {
   position: absolute;
-  left: 22px;
-  top: 21px;
+  left: 23px;
+  top: 22px;
+}
+
+.catalog-choose__image--pro {
+  left: 14px;
+  top: 23px;
+}
+
+.catalog-choose__arrow-image {
+  margin-left: 16px;
 }
 
 @media (min-width: $tablet-width) {
@@ -15,11 +72,36 @@
     padding: 77px 62px 53px 52px;
   }
 
+  .catalog-choose__header {
+    font-size: 36px;
+    line-height: 36px;
+    color: #000000;
+    margin-left: 0;
+  }
+
+  .catalog-choose__text {
+    width: 340px;
+    font-size: 16px;
+    line-height: 24px;
+    color: #000000;
+    border: none;
+  }
+
+  .catalog-choose__link {
+    font-size: 20px;
+    line-height: 30px;
+    color: #000000;
+  }
+
   .catalog-choose__image {
     width: 200px;
     height: 210px;
     top: 80px;
     left: 470px;
+  }
+
+  .catalog-choose__arrow-image {
+    margin-left: 25px;
   }
 }
 
@@ -29,6 +111,15 @@
     grid-template-columns: 1fr 1fr;
     gap: 80px;
     margin-bottom: 70px;
+  }
+
+  .catalog-choose__header {
+    text-align: center;
+    margin-bottom: 70px;
+  }
+
+  .catalog-choose__link {
+    margin-top: 0;
   }
 
   .catalog-choose__image {

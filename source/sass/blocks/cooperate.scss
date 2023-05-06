@@ -7,6 +7,9 @@
 .cooperate__wrapper {
   display: flex;
   align-items: center;
+  padding-left: 40px;
+  padding-top: 26px;
+  padding-bottom: 26px;
 }
 
 .cooperate--main-page-background {
@@ -20,8 +23,8 @@
   line-height: 20px;
   text-transform: uppercase;
   color: #111111;
-  margin: 0;
   width: 250px;
+  margin: 0 -36px 0 0;
 }
 
 .cooperate__address {
@@ -36,7 +39,7 @@
   position: relative;
   display: block;
   width: 100%;
-  height: 362px;
+  height: 368px;
 }
 
 @media (min-width: $tablet-width) {

@@ -14,18 +14,34 @@
 
 .catalog-item__header {
   width: 75px;
-  margin-top: -20px;
-  margin-bottom: 25px;
+  margin-bottom: 18px;
+}
+
+.catalog-item__image {
+  margin-top: 18px;
+  margin-left: 54px;
+  margin-right: 37px;
+}
+
+.catalog-item__image--1000 {
+  margin-top: 8px;
+  margin-left: 47px;
+  margin-right: 27px;
 }
 
 .catalog-item__order-button {
   display: block;
   text-align: center;
-  margin-top: 13px;
 }
 
 .catalog-item__flex-wrapper {
   display: flex;
+  margin-top: 20px;
+  margin-bottom: 22px;
+}
+
+.catalog-item__cat-energy-1000 {
+
 }
 
 .catalog-item__information-flex-wrapper {

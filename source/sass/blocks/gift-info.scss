@@ -1,3 +1,8 @@
+.gift-info__image {
+  margin-top: 59px;
+  margin-bottom: 33px;
+}
+
 .gift-info__text {
   font-family: "Lato", "Arial", sans-serif;
   font-weight: 400;
@@ -5,6 +10,7 @@
   line-height: 20px;
   color: #ffffff;
   text-align: center;
+  width: 161px;
 }
 
 @media (min-width: $tablet-width) {

@@ -6,7 +6,7 @@
   line-height: 24px;
   color: #000000;
   margin: 0;
-  padding: 25px 0 36px 0;
+  padding: 18px 0 34px 0;
   width: 100%;
 
   &::before {
@@ -20,8 +20,12 @@
   }
 }
 
+.additional-goods__item-list {
+  margin-bottom: 35px;
+}
+
 .additional-goods__item {
-  padding: 13px 0 20px 0;
+  padding: 0 0 20px 0;
   border-bottom: 1px solid #cdcdcd;
 }
 
@@ -32,7 +36,6 @@
 .additional-goods__gift {
   display: flex;
   flex-direction: column;
-  justify-content: center;
   align-items: center;
   background-color: #68b738;
   background-image: url("../../img/cat-in-a-case-background.jpg");

@@ -8,8 +8,12 @@
 .product-information__type {
   display: flex;
   justify-content: space-between;
-  margin: 0;
   width: 140px;
+  margin: 0;
+}
+
+.product-information__type--cat-energy-1000 {
+
 }
 
 .product-information__value {

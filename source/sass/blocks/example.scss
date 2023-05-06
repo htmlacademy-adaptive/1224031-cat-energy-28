@@ -7,7 +7,7 @@
 }
 
 .example__background-wrapper {
-  padding: 25px 20px;
+  padding: 0 21px 35px;
 }
 
 .example__header {
@@ -15,7 +15,7 @@
   font-size: 36px;
   line-height: 40px;
   color: #000000;
-  margin: 0;
+  margin: 0 0 39px;
 }
 
 .example__text {
@@ -23,11 +23,7 @@
   font-weight: 400;
   font-size: 14px;
   line-height: 18px;
-  margin: 0;
-}
-
-.example__stats {
-  margin-top: 20px;
+  margin: 0 0 17px;
 }
 
 .example__cost {
@@ -36,7 +32,7 @@
   line-height: 20px;
   text-transform: uppercase;
   color: #000000;
-  margin: 40px 0 20px;
+  margin: 34px 0 20px;
   text-align: center;
 }
 
