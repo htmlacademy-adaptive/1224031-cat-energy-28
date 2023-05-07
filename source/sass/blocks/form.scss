@@ -372,3 +372,9 @@
     margin-left: 175px;
   }
 }
+
+.form__radio {
+  &:disabled ~ span {
+    opacity: 0.3;
+  }
+}
