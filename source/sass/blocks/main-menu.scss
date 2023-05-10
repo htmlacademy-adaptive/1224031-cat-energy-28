@@ -36,7 +36,15 @@
 
   .main-menu__item {
     border: none;
-    margin-right: 25px;
+    margin-right: 35px;
+
+    &:last-child {
+      margin-right: 0;
+    }
+  }
+
+  .main-menu__link {
+    padding: 0;
   }
 
   .main-menu__link-active {

@@ -49,16 +49,30 @@
   }
 
   .cooperate__wrapper {
-    padding: 60px 40px;
+    padding: 60px 0 61px;
+  }
+
+  .cooperate__wrapper--main-page {
+    padding-top: 55px;
   }
 
   .cooperate__text {
-    margin-right: 310px;
+    font-size: 20px;
+    line-height: 26px;
+    margin-right: 160px;
+    margin-left: 40px;
+  }
+
+  .cooperate__address {
+    font-size: 16px;
+    line-height: 20px;
+    text-align: right;
+    margin-right: 40px;
   }
 
   .cooperate__address-city {
     display: inline-block;
-    margin-top: 25px;
+    margin-top: 20px;
   }
 }
 

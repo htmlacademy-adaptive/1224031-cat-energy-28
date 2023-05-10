@@ -63,29 +63,36 @@
 }
 
 @media (min-width: $tablet-width) {
-  .additional-goods {
-    display: block;
-    width: 100%;
-  }
-
   .additional-goods__header {
     font-size: 36px;
     line-height: 36px;
+    margin-top: 65px;
+
+    &:before {
+      top: 19%;
+    }
+  }
+
+  .additional-goods__header-text {
+    margin-bottom: 80px;
   }
 
   .additional-goods__item {
     border: 1px solid #cdcdcd;
     border-bottom: none;
+    padding-bottom: 26px;
 
     &:last-child {
       border-bottom: 1px solid #cdcdcd;
     }
   }
 
+  .additional-goods__container {
+    width: 675px;
+  }
+
   .additional-goods__gift {
-    display: flex;
-    align-items: center;
-    justify-content: space-around;
+    flex-direction: row;
     width: 710px;
     height: 200px;
     background-size: cover;

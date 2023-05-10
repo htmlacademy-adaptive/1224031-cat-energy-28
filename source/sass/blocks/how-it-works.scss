@@ -17,6 +17,10 @@
 }
 
 @media (min-width: $tablet-width) {
+  .how-it-works {
+    padding-bottom: 0;
+  }
+
   .how-it-works__header {
     font-size: 60px;
     line-height: 60px;
@@ -25,6 +29,7 @@
   .how-it-works__advantages {
     margin-top: 70px;
     border-bottom: 1px solid #e6e6e6;
+    padding-bottom: 42px;
   }
 }
 

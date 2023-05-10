@@ -52,35 +52,35 @@ margin-top: 16px;
   }
 
   .catalog-item__image {
-    margin-bottom: 35px;
+    margin-top: -47px;
+    margin-bottom: 28px;
     width: 162px;
     height: 173px;
   }
 
   .catalog-item__image--1000 {
+    margin-top: -73px;
     width: 168px;
     height: 200px;
   }
 
   .catalog-item__header {
-    margin-bottom: 20px;
+    margin-bottom: 16px;
+    margin-left: 50px;
     width: 155px;
     text-align: center;
   }
 
-  .catalog-item__info {
-    margin-bottom: 33px;
-  }
-
   .catalog-item__order-button {
-    width: 160px;
+    width: 250px;
     margin-top: 0;
-    margin-bottom: 40px;
   }
 
   .catalog-item__flex-wrapper {
     flex-direction: column;
     align-items: center;
+    margin-bottom: 35px;
+    margin-top: 0;
   }
 }
 

@@ -93,25 +93,25 @@
             </div>
           </div>
         </fieldset>
-        <fieldset class="form__fieldset form__fieldset--bordered program-type">
+        <fieldset class="form__fieldset form__fieldset--program-type form__fieldset--bordered program-type">
           <legend class="visually-hidden">Выберите тип программы</legend>
           <div class="form-page__desktop-container">
-            <div class="form__wrapper">
-              <label class="form__label">
+            <div class="form__wrapper form__wrapper--radio">
+              <label class="form__label form__radio-button">
                 <input class="form__radio" type="radio" name="program-type" value="weight-loss" checked disabled>
                 <span class="form__radio-styled"></span>
                 <span>Похудение</span>
               </label>
             </div>
-            <div class="form__wrapper">
-              <label class="form__label">
+            <div class="form__wrapper form__wrapper--radio">
+              <label class="form__label form__radio-button">
                 <input class="form__radio" type="radio" name="program-type" value="weight-gain">
                 <span class="form__radio-styled"></span>
                 Набор массы
               </label>
             </div>
-            <div class="form__wrapper form__wrapper--last-item">
-              <label class="form__label">
+            <div class="form__wrapper form__wrapper--radio form__wrapper--last-item">
+              <label class="form__label form__radio-button">
                 <input class="form__radio" type="radio" name="program-type" value="dont-know">
                 <span class="form__radio-styled"></span>
                 Не знаю (Нужен ваш совет)
@@ -147,12 +147,12 @@
       </div>
     </fieldset>
     <fieldset class="form__fieldset form__fieldset-food-additives food-additives">
-      <legend class="form__header"><span class="form__container"><span
+      <legend class="form__header form__header-food-additives"><span class="form__container"><span
         class="form__header-text">Дополнительно</span></span></legend>
       <div class="form-page__container food-additives__wrapper">
         <div class="form__wrapper food-additives__item">
           <label class="form__label--additives">
-            <input class="form__checkbox" type="checkbox" id="sweetener" name="sweetener">
+            <input class="form__checkbox" type="checkbox" id="sweetener" name="sweetener" checked>
             <span class="form__checkbox-styled"></span>
             Cахарозаменитель
           </label>
@@ -180,7 +180,7 @@
         </div>
       </div>
     </fieldset>
-    <div class="form__flex-wrapper form-page__container">
+    <div class="form__flex-wrapper form-page__container form__submit-button">
       <button class="form__submit button" type="submit"><span class="button__text">Отправить заявку</span></button>
       <p class="form-page__required-sign">* — Обязательные поля</p>
     </div>

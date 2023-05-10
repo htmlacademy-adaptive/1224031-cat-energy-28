@@ -30,14 +30,14 @@
   .advantages-list {
     display: grid;
     grid-template-columns: 243px 243px;
-    gap: 37px 150px;
+    gap: 70px 140px;
   }
 
   .advantages-list__item {
     display: flex;
     flex-direction: column;
     align-items: flex-start;
-    height: 230px;
+    height: 227px;
 
     &:nth-child(1) {
       background-image: url("../img/advantages-list-background-number-1.svg");
@@ -70,7 +70,9 @@
   }
 
   .advantages-list__icon {
-    margin-bottom: 30px;
+    margin-bottom: 35px;
+    width: 80px;
+    height: 80px;
   }
 }
 
