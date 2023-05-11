@@ -27,3 +27,14 @@
     margin-right: 266px;
   }
 }
+
+@media (min-width: $desktop-width) {
+  .gift-info__image {
+    margin: 55px 0 50px 0;
+  }
+
+  .gift-info__text {
+    margin: 0;
+    text-align: center;
+  }
+}

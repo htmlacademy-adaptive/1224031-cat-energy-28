@@ -32,6 +32,7 @@
 @media (min-width: $tablet-width) {
   .main-menu {
     position: static;
+    background-color: transparent;
   }
 
   .main-menu__item {
@@ -57,12 +58,7 @@
 }
 
 @media (min-width: $desktop-width) {
-  .page-header__menu {
-    font-size: 20px;
-    line-height: 30px;
+  .main-menu__link--main-page {
+    color: #ffffff;
   }
-
-    .main-menu__link--main-page {
-      color: #ffffff;
-    }
-  }
+}

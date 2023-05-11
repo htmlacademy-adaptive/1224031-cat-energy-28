@@ -55,11 +55,18 @@
 
 @media (min-width: $desktop-width) {
   .program-presentation__header {
-    padding-top: 110px;
+    padding-top: 138px;
+    padding-bottom: 40px;
   }
 
   .program-presentation__image {
     width: 550px;
     height: 500px;
+    padding-top: 55px;
+  }
+
+  .program-presentation__text {
+    margin-left: 0;
+    padding-bottom: 53px;
   }
 }

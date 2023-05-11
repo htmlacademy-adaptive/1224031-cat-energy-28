@@ -6,7 +6,15 @@
 .page-header__flex-wrapper {
   display: flex;
   justify-content: space-between;
-  padding: 12px 13px 10px 20px;
+  padding: 15px 13px 8px 20px;
+}
+
+.page-header__flex-wrapper--main-page {
+  padding-top: 5px;
+}
+
+.page-header__flex-wrapper--form {
+  padding-top: 15px;
 }
 
 .page-header__flex-wrapper--index-position {
@@ -70,6 +78,10 @@
     padding: 0;
   }
 
+  .page-header__flex-wrapper--main-page {
+    padding-top: 0;
+  }
+
   .page-header__tablet-flex-wrapper {
     display: flex;
     justify-content: space-between;
@@ -101,6 +113,15 @@
 
 @media (min-width: $desktop-width) {
   .page-header {
-    padding-top: 40px;
+    padding-top: 52px;
+  }
+
+  .page-header__logo {
+    margin-right: 538px;
+  }
+
+  .page-header__menu {
+    font-size: 20px;
+    line-height: 30px;
   }
 }

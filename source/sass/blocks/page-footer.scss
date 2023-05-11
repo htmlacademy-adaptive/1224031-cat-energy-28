@@ -68,3 +68,9 @@
     padding: 0;
   }
 }
+
+@media (min-width: $desktop-width) {
+  .page-footer__wrapper {
+    padding: 70px 0;
+  }
+}

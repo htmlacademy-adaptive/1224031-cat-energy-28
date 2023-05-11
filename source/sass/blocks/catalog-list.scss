@@ -53,5 +53,6 @@
 @media (min-width: $desktop-width) {
   .catalog-list {
     grid-template-columns: repeat(4, 245px);
+    gap: 140px 80px;
   }
 }

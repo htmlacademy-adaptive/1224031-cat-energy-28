@@ -84,22 +84,25 @@
   }
 
   .cooperate__text {
-    width: 160px;
+    width: 220px;
     margin-right: 80px;
+    margin-left: 85px;
   }
 
   .cooperate__address {
     width: 220px;
+    margin-right: 62px;
+    text-align: start;
   }
 
   .cooperate__wrapper {
     background-color: #ffffff;
     position: absolute;
-    top: 95px;
-    left: 200px;
+    top: 93px;
+    left: 160px;
     z-index: 1;
     display: flex;
     justify-content: center;
-    width: 490px;
+    width: 570px;
   }
 }

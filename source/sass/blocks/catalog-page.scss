@@ -14,3 +14,9 @@
     margin: 60px 0 164px;
   }
 }
+
+@media (min-width: $desktop-width) {
+  .catalog-page__header {
+    margin-top: 70px;
+  }
+}

@@ -55,8 +55,8 @@
 
     &::after {
       position: absolute;
-      top: 0;
-      bottom: 83px;
+      top: 30px;
+      bottom: -190px;
       left: 50%;
       right: 0;
       content: "";
@@ -70,6 +70,11 @@
 
   .program-choose__background-wrapper {
     padding-top: 120px;
+    margin-left: 80px;
+  }
+
+  .program-choose__desktop-background-wrapper {
+    margin-bottom: 270px;
   }
 
   .program-choose__image-wrapper {
@@ -79,6 +84,7 @@
   }
 
   .program-choose__button {
-    margin-bottom: 270px;
+    margin-bottom: 0;
+    margin-left: 80px;
   }
 }

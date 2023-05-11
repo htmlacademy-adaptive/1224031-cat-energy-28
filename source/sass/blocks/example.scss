@@ -15,7 +15,7 @@
   font-size: 36px;
   line-height: 40px;
   color: #000000;
-  margin: 0 0 39px;
+  margin: 0 0 42px;
 }
 
 .example__text {
@@ -93,17 +93,21 @@
 @media (min-width: $desktop-width) {
   .example {
     padding-top: 0;
-    background-image: linear-gradient(#ffffff 170px, #eaeaea 170px);
+    background-image: linear-gradient(#ffffff 135px, #eaeaea 135px);
+  }
+
+  .example__background-wrapper {
+    padding-bottom: 22px;
   }
 
   .example__header {
     background-color: #ffffff;
-    margin-bottom: 150px;
+    margin-bottom: 147px;
   }
 
   .example__flex-wrapper {
     position: absolute;
-    top: 150px;
+    top: 115px;
     right: 0;
     display: block;
     background-color: transparent;
@@ -121,11 +125,15 @@
   }
 
   .example__text {
-    width: 440px;
-    margin-bottom: 70px;
+    width: 433px;
+    margin-bottom: 75px;
   }
 
   .example__cost {
     margin: 0;
+  }
+
+  .example__cost-desktop {
+    margin-right: 62px;
   }
 }

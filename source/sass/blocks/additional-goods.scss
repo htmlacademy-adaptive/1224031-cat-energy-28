@@ -68,7 +68,7 @@
     line-height: 36px;
     margin-top: 65px;
 
-    &:before {
+    &::before {
       top: 19%;
     }
   }
@@ -103,9 +103,13 @@
 }
 
 @media (min-width: $desktop-width) {
+  .additional-goods__container {
+    width: 1290px;
+  }
+
   .additional-goods__flex-wrapper {
     display: flex;
-    margin-bottom: 85px;
+    margin-bottom: 50px;
   }
 
   .additional-goods__item {
@@ -116,18 +120,26 @@
     border: none;
     border-top: 1px solid #cdcdcd;
     padding: 0;
+    width: 895px;
+  }
+
+  .additional-goods__header {
+    margin-top: 75px;
+  }
+
+  .additional-goods__header-text {
+    padding: 0 35px;
   }
 
   .additional-goods__item-list {
-    margin-right: 120px;
-    width: 795px;
+    margin-right: 80px;
   }
 
   .additional-goods__gift {
     width: 245px;
-    height: auto;
+    height: 287px;
     flex-direction: column;
-    background-position: center;
+    background-position: -35px;
     margin: 0;
   }
 }

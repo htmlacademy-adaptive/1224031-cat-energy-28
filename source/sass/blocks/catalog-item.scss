@@ -22,7 +22,7 @@
 }
 
 .catalog-item__image {
-margin-top: 16px;
+  margin-top: 16px;
 }
 
 .catalog-item__image--1000 {
@@ -88,6 +88,12 @@ margin-top: 16px;
   .catalog-item__header {
     width: 150px;
     text-align: center;
+    margin-left: 12px;
+    margin-bottom: 14px;
+  }
+
+  .catalog-item__header--cat-energy-1000 {
+    margin-bottom: 18px;
   }
 
   .catalog-item__order-button {
@@ -102,10 +108,12 @@ margin-top: 16px;
   .catalog-item__image {
     width: 162px;
     height: 173px;
+    margin-bottom: 35px;
   }
 
   .catalog-item__image--1000 {
-    width: 172px;
-    height: 196px;
+    width: 170px;
+    height: 190px;
+    margin-bottom: 40px;
   }
 }

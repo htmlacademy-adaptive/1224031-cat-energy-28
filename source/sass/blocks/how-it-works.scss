@@ -1,6 +1,6 @@
 .how-it-works {
   padding-top: 20px;
-  padding-bottom: 50px;
+  padding-bottom: 36px;
 }
 
 .how-it-works__header {
@@ -36,5 +36,6 @@
 @media (min-width: $desktop-width) {
   .how-it-works__advantages {
     border-bottom: none;
+    padding-bottom: 10px;
   }
 }
