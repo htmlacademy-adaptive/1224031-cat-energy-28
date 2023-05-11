@@ -45,7 +45,7 @@
           <source media="(min-width: 1440px)" srcset="img/logo-desktop.svg">
           <source media="(min-width: 768px)" srcset="img/logo-tablet.svg">
           <img class="header-logo-link__image header-logo" src="img/logo-mobile.svg"
-               alt="Логотип">
+                alt="Логотип">
         </picture>
       </a>
       <button class="page-header__menu-button"><img class="page-header__menu-button--open"
@@ -57,12 +57,12 @@
     </div>
     <ul class="page-header__menu main-menu page-header__menu--closed page-header__menu--no-js">
       <li class="main-menu__item"><a
-        class="main-menu__link main-menu__link--main-page main-menu__link-active main-menu__link-active--main-page"
+        class="main-menu__link"
         href="index.html">Главная</a>
       </li>
-      <li class="main-menu__item"><a class="main-menu__link main-menu__link--main-page" href="catalog.html">Каталог
+      <li class="main-menu__item"><a class="main-menu__link" href="catalog.html">Каталог
         продукции</a></li>
-      <li class="main-menu__item"><a class="main-menu__link main-menu__link--main-page" href="form.html">Подбор
+      <li class="main-menu__item"><a class="main-menu__link main-menu__link-active" href="form.html">Подбор
         программы</a></li>
     </ul>
 
@@ -130,19 +130,19 @@
           <div class="form__wrapper form__email">
             <label class="form__label" for="email">E-mail:*</label>
             <input class="form__input form__input--icon owner-data__email" type="email" id="email" name="email"
-                   placeholder="kuklachev@gmail.com" required>
+                    placeholder="kuklachev@gmail.com" required>
           </div>
           <div class="form__wrapper">
             <label class="form__label" for="phone">Телефон:*</label>
             <input class="form__input form__input--icon owner-data__phone" type="tel" id="phone" name="phone"
-                   placeholder="8 (960) 900-60-90" required>
+                    placeholder="8 (960) 900-60-90" required>
           </div>
         </div>
       </div>
     </fieldset>
     <fieldset class="form__fieldset form__fieldset-more-info">
       <legend class="form__header"><span class="form__container"><span
-        class="form__header-text">Комментарий</span></span></legend>
+        class="form__header-text form__header-text--more-info">Комментарий</span></span></legend>
       <div class="form-page__container">
         <label><textarea class="form__input form__textarea" placeholder="Расскажите обо всех повадках кота"></textarea></label>
       </div>
@@ -151,28 +151,28 @@
       <legend class="form__header form__header-food-additives"><span class="form__container"><span
         class="form__header-text">Дополнительно</span></span></legend>
       <div class="form-page__container food-additives__wrapper">
-        <div class="form__wrapper food-additives__item">
+        <div class="food-additives__item">
           <label class="form__label--additives">
             <input class="form__checkbox" type="checkbox" id="sweetener" name="sweetener" checked>
             <span class="form__checkbox-styled"></span>
             Cахарозаменитель
           </label>
         </div>
-        <div class="form__wrapper food-additives__item">
+        <div class="food-additives__item">
           <label class="form__label--additives">
             <input class="form__checkbox" type="checkbox" id="water" name="water">
             <span class="form__checkbox-styled"></span>
             Питьевая вода
           </label>
         </div>
-        <div class="form__wrapper food-additives__item">
+        <div class="food-additives__item">
           <label class="form__label--additives">
             <input class="form__checkbox" type="checkbox" id="milk" name="milk">
             <span class="form__checkbox-styled"></span>
             Молоко
           </label>
         </div>
-        <div class="form__wrapper food-additives__item">
+        <div class="food-additives__item">
           <label class="form__label--additives">
             <input class="form__checkbox" type="checkbox" id="vitamins" name="vitamins">
             <span class="form__checkbox-styled"></span>
