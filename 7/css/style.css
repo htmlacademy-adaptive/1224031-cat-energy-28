@@ -1860,6 +1860,7 @@ body {
 }
 
 .form__input--icon {
+  position: relative;
   padding-left: 15px;
 }
 
@@ -2186,6 +2187,30 @@ body {
     margin-left: 175px;
   }
 }
+.owner-data__email::before {
+  content: "";
+  position: absolute;
+  left: 185px;
+  top: 13px;
+  width: 17px;
+  height: 13px;
+  background-image: url("../img/email-icon.svg");
+  background-repeat: no-repeat;
+  background-position: center;
+}
+
+.owner-data__phone::before {
+  content: "";
+  position: absolute;
+  left: 185px;
+  top: 13px;
+  width: 17px;
+  height: 13px;
+  background-image: url("../img/phone-icon.svg");
+  background-repeat: no-repeat;
+  background-position: center;
+}
+
 @media (min-width: 1440px) {
   .owner-data__flex-wrapper {
     display: flex;
