@@ -1,0 +1,130 @@
+.cat-compare {
+  position: relative;
+  display: flex;
+  height: 260px;
+  width: 100%;
+}
+
+.cat-compare__fat {
+  width: 100%;
+  background-image: url("../../img/cat-compare-fat-mobile@1x.png");
+  @media (min-resolution: 2dppx) {
+    background-image: url("../../img/cat-compare-fat-mobile@2x.png");
+  }
+  background-repeat: no-repeat;
+  background-size: 280px 256px;
+  background-position-x: -2px;
+}
+
+.cat-compare__slim {
+  width: 100%;
+  background: url("../../img/cat-compare-slim-mobile@1x.png") no-repeat;
+  @media (min-resolution: 2dppx) {
+    background-image: url("../../img/cat-compare-slim-mobile@2x.png");
+  }
+  background-position-x: -140px;
+  background-size: 280px 256px;
+}
+
+.cat-compare__slider {
+  position: absolute;
+  cursor: pointer;
+  border: none;
+  padding: 0;
+  width: 4px;
+  height: 99%;
+  background-color: #666666;
+  border-radius: 2px;
+  left: 137px;
+
+  &:hover {
+    background-color: #68b738;
+
+    .cat-compare__slider-button--hover {
+      fill: #68b738;
+    }
+
+    .cat-compare__slider-button--hover-circle {
+      stroke: #68b738;
+    }
+  }
+
+  &:active {
+    background-color: #5eaa2f;
+    opacity: 0.6;
+
+    .cat-compare__slider-button--hover {
+      fill: #5eaa2f;
+    }
+
+    .cat-compare__slider-button--hover-circle {
+      stroke: #5eaa2f;
+    }
+  }
+}
+
+.cat-compare__slider-button {
+  position: absolute;
+  left: -18px;
+  top: 108px;
+}
+
+@media (min-width: $tablet-width) {
+  .cat-compare {
+    height: 512px;
+    padding-bottom: 122px;
+  }
+
+  .cat-compare__fat {
+    background-image: url("../../img/cat-compare-fat-desktop@1x.png");
+    @media (min-resolution: 2dppx) {
+      background-image: url("../../img/cat-compare-fat-desktop@2x.png");
+    }
+    background-size: 560px 512px;
+    background-repeat: no-repeat;
+    background-position-x: 75px;
+    background-position-y: 22px;
+  }
+
+  .cat-compare__slim {
+    background-image: url("../../img/cat-compare-slim-desktop@1x.png");
+    @media (min-resolution: 2dppx) {
+      background-image: url("../../img/cat-compare-slim-desktop@2x.png");
+    }
+    background-size: 560px 512px;
+    background-repeat: no-repeat;
+    background-position-x: -280px;
+    background-position-y: 22px;
+  }
+
+  .cat-compare__slider {
+    height: 513px;
+    margin-top: 21px;
+    left: 353px;
+  }
+
+  .cat-compare__slider-button {
+    top: 237px;
+  }
+}
+
+@media (min-width: $desktop-width) {
+  .cat-compare {
+    padding: 0;
+  }
+
+  .cat-compare__fat {
+    background-position-x: -3px;
+    background-position-y: 0;
+  }
+
+  .cat-compare__slim {
+    background-position-x: -282px;
+    background-position-y: 0;
+  }
+
+  .cat-compare__slider {
+    left: 275px;
+    margin: 0;
+  }
+}
