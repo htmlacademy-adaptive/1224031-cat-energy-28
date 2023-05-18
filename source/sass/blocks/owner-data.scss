@@ -1,31 +1,3 @@
-.owner-data__email {
-  &::before {
-    content: "";
-    position: absolute;
-    left: 185px;
-    top: 13px;
-    width: 17px;
-    height: 13px;
-    background-image: url("../img/email-icon.svg");
-    background-repeat: no-repeat;
-    background-position: center;
-  }
-}
-
-.owner-data__phone {
-  &::before {
-    content: "";
-    position: absolute;
-    left: 185px;
-    top: 13px;
-    width: 17px;
-    height: 13px;
-    background-image: url("../img/phone-icon.svg");
-    background-repeat: no-repeat;
-    background-position: center;
-  }
-}
-
 @media (min-width: $desktop-width) {
   .owner-data__flex-wrapper {
     display: flex;
