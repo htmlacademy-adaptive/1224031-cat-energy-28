@@ -111,17 +111,19 @@
     border: none;
     outline: 2px solid #444444;
 
-      + .form__phone-icon, + .form__email-icon {
-        stroke: #68b738;
-      }
+    + .form__phone-icon,
+    + .form__email-icon {
+      stroke: #68b738;
+    }
   }
 
   &:invalid:not(:placeholder-shown) {
     outline: none;
-    border: 2px solid #ff8282;;
+    border: 2px solid #ff8282;
 
-      + .form__phone-icon, + .form__email-icon {
-        stroke: #ff8282;
+    + .form__phone-icon,
+    + .form__email-icon {
+      stroke: #ff8282;
     }
   }
 
