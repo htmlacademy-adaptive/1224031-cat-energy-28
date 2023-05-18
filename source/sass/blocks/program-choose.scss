@@ -13,8 +13,10 @@
 .program-choose__button {
   font-size: 14px;
   line-height: 18px;
-  padding-right: 93px;
-  padding-left: 94px;
+  width: 280px;
+  text-align: center;
+  margin-left: 21px;
+  padding: 9px 0;
 }
 
 .program-choose__image-wrapper {
@@ -33,15 +35,16 @@
   .program-choose__button {
     font-size: 20px;
     line-height: 20px;
-    padding: 14px 26px;
+    padding: 15px 0;
     margin-bottom: 450px;
-    margin-left: 85px;
+    margin-left: 90px;
+    width: 246px;
   }
 
   .program-choose__image-wrapper {
     z-index: -1;
-    top: 240px;
-    left: 60px;
+    top: 217px;
+    left: 5px;
   }
 }
 
@@ -52,8 +55,8 @@
 
     &::after {
       position: absolute;
-      top: 0;
-      bottom: 83px;
+      top: 30px;
+      bottom: -190px;
       left: 50%;
       right: 0;
       content: "";
@@ -67,6 +70,11 @@
 
   .program-choose__background-wrapper {
     padding-top: 120px;
+    margin-left: 80px;
+  }
+
+  .program-choose__desktop-background-wrapper {
+    margin-bottom: 270px;
   }
 
   .program-choose__image-wrapper {
@@ -76,6 +84,7 @@
   }
 
   .program-choose__button {
-    margin-bottom: 270px;
+    margin-bottom: 0;
+    margin-left: 80px;
   }
 }

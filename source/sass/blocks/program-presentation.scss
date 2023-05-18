@@ -9,7 +9,8 @@
   font-size: 36px;
   line-height: 36px;
   margin: 0;
-  padding-top: 27px;
+  padding-top: 30px;
+  padding-bottom: 23px;
 }
 
 .program-presentation__text {
@@ -18,12 +19,11 @@
   line-height: 14px;
   text-transform: uppercase;
   margin: 0;
-  padding-top: 25px;
-  padding-bottom: 130px;
+  padding-bottom: 165px;
 }
 
 .program-presentation__image {
-  padding-top: 30px;
+  padding-top: 48px;
 }
 
 @media (min-width: $tablet-width) {
@@ -36,6 +36,7 @@
     line-height: 60px;
     color: #000000;
     padding-top: 60px;
+    padding-bottom: 43px;
   }
 
   .program-presentation__text {
@@ -43,21 +44,29 @@
     line-height: 20px;
     color: #000000;
     padding-bottom: 50px;
+    margin-left: 5px;
   }
 
   .program-presentation__image {
-    width: 600px;
-    height: 550px;
+    width: 700px;
+    height: 600px;
   }
 }
 
 @media (min-width: $desktop-width) {
   .program-presentation__header {
-    padding-top: 110px;
+    padding-top: 138px;
+    padding-bottom: 40px;
   }
 
   .program-presentation__image {
     width: 550px;
     height: 500px;
+    padding-top: 55px;
+  }
+
+  .program-presentation__text {
+    margin-left: 0;
+    padding-bottom: 53px;
   }
 }

@@ -1,10 +1,29 @@
 .additional-item-info__count {
-  margin: 0;
+  margin: 0 19px;
 }
 
 @media (min-width: $tablet-width) {
   .additional-item-info {
     display: flex;
     justify-content: space-between;
+  }
+
+  .additional-item-info__count {
+    margin: 5px 41px;
+  }
+
+  .additional-item-info__price {
+    margin-left: 55px;
+  }
+}
+
+@media (min-width: $desktop-width) {
+  .additional-item-info__count {
+    width: 100%;
+    margin: 5px 0 5px 40px;
+  }
+
+  .additional-item-info__price {
+    margin: 0;
   }
 }

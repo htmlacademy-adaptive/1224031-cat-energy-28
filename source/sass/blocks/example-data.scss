@@ -6,6 +6,7 @@
   display: flex;
   align-items: center;
   justify-content: center;
+  text-transform: uppercase;
   font-weight: 400;
   font-size: 24px;
   line-height: 24px;
@@ -35,12 +36,26 @@
   .example-data__number {
     font-size: 30px;
     line-height: 37px;
+    min-width: 160px;
+    min-height: 70px;
+    margin-top: -8px;
   }
 
   .example-data__text {
     font-size: 14px;
     line-height: 14px;
     background-color: #ffffff;
+    padding: 0 10px;
+    top: 57px;
+    left: 24px;
+
+    & br {
+      display: none;
+    }
+  }
+
+  .example-data__text--time-spent {
+    left: 9px;
   }
 }
 

@@ -8,8 +8,8 @@
 .product-information__type {
   display: flex;
   justify-content: space-between;
-  margin: 0;
   width: 140px;
+  margin: 0;
 }
 
 .product-information__value {
@@ -25,7 +25,8 @@
   .product-information__type {
     border-bottom: 1px solid #cdcdcd;
     padding-top: 5px;
-    padding-bottom: 8px;
+    padding-bottom: 9px;
+    width: 250px;
   }
 }
 

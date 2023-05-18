@@ -1,14 +1,22 @@
+.food-additives__item {
+  margin-bottom: 11px;
+}
+
 @media (min-width: $tablet-width) {
   .food-additives__wrapper {
     display: grid;
     grid-template-columns: 1fr 1fr;
-    gap: 30px 120px;
+    gap: 18px 60px;
   }
 }
 
 @media (min-width: $desktop-width) {
   .food-additives__wrapper {
-    display: flex;
-    flex-direction: row;
+    grid-template-columns: repeat(4, 325px);
+    gap: 0;
+  }
+
+  .food-additives__item {
+    margin-bottom: 18px;
   }
 }

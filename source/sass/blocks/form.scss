@@ -31,7 +31,19 @@
 }
 
 .form__fieldset-cat-data {
-  margin-bottom: 25px;
+  margin-bottom: 32px;
+}
+
+.form__fieldset-owner-data {
+  margin-bottom: 10px;
+}
+
+.form__fieldset-more-info {
+  margin-bottom: 20px;
+}
+
+.form__fieldset-food-additives {
+  margin-bottom: 22px;
 }
 
 .form__header {
@@ -59,7 +71,7 @@
   display: inline-block;
   background-color: #ffffff;
   padding: 0 20px;
-  margin-left: -20px;
+  width: 200px;
 }
 
 .form__container {
@@ -89,7 +101,7 @@
   color: #444444;
   border: 1px solid #e7e7e7;
   flex-grow: 1;
-  padding: 11px 0 11px 20px;
+  padding: 14px 0 12px 19px;
 
   &:hover {
     border-color: #cdcdcd;
@@ -116,6 +128,11 @@
   }
 }
 
+.form__input--icon {
+  position: relative;
+  padding-left: 15px;
+}
+
 .form__radio-styled {
   cursor: pointer;
   position: relative;
@@ -126,7 +143,7 @@
   vertical-align: middle;
   border: 1px solid #cdcdcd;
   border-radius: 50%;
-  margin-right: 15px;
+  margin-right: 10px;
 }
 
 .form__radio {
@@ -155,6 +172,10 @@
   &:active + .form__radio-styled {
     opacity: 0.3;
   }
+
+  &:disabled ~ span {
+    opacity: 0.3;
+  }
 }
 
 .form__checkbox-styled {
@@ -166,7 +187,7 @@
   background: #ffffff;
   vertical-align: middle;
   border: 1px solid #cdcdcd;
-  margin-right: 15px;
+  margin-right: 10px;
 }
 
 .form__checkbox {
@@ -201,16 +222,16 @@
 .form__wrapper {
   display: flex;
   align-items: center;
-  margin-bottom: 20px;
+  margin-bottom: 13px;
 }
 
 .form__desktop-flex-wrapper {
-  margin-bottom: 45px;
+  margin-bottom: 27px;
 }
 
 .form__textarea {
-  min-width: 300px;
-  height: 150px;
+  min-width: 260px;
+  height: 125px;
   resize: none;
 }
 
@@ -221,7 +242,7 @@
 
 .form__submit {
   width: 280px;
-  margin-left: -30px;
+  margin-bottom: 23px;
 }
 
 
@@ -229,12 +250,28 @@
   .form__header {
     font-size: 36px;
     line-height: 36px;
+    margin-bottom: 72px;
+  }
+
+  .form__header-food-additives {
+    margin-bottom: 60px;
+  }
+
+  .form__header-text {
+    width: 520px;
+    margin-left: -30px;
+    padding: 0 30px;
+  }
+
+  .form__radio-button {
+    margin-left: 28px;
+    margin-bottom: 10px;
   }
 
   .form__radio-styled {
     width: 40px;
     height: 40px;
-    margin-right: 20px;
+    margin-right: 16px;
   }
 
   .form__radio {
@@ -249,15 +286,15 @@
   .form__checkbox-styled {
     width: 40px;
     height: 40px;
-    margin-right: 20px;
+    margin-right: 15px;
   }
 
   .form__checkbox {
     &:checked + .form__checkbox-styled::before {
-      width: 26px;
-      height: 26px;
-      top: 6px;
-      left: 8px;
+      width: 33px;
+      height: 33px;
+      top: 0;
+      left: 3px;
     }
   }
 
@@ -286,14 +323,52 @@
     }
   }
 
+  .form__fieldset-cat-data {
+    margin-bottom: 62px;
+  }
+
+  .form__fieldset--program-type {
+    padding-top: 27px;
+    margin-bottom: 77px;
+  }
+
+  .form__fieldset-owner-data {
+    margin-bottom: 53px;
+  }
+
+  .form__fieldset-more-info {
+    margin-bottom: 57px;
+  }
+
+  .form__fieldset-food-additives {
+    margin-bottom: 40px;
+  }
+
+  .form__label {
+    margin-right: 20px;
+  }
+
   .form__input {
     font-size: 20px;
     line-height: 30px;
+    padding: 16px 0 12px 18px;
   }
 
   .form__textarea {
     min-width: 610px;
-    height: 175px;
+    height: 150px;
+  }
+
+  .form__wrapper {
+    margin-bottom: 10px;
+  }
+
+  .form__wrapper--radio {
+    margin-bottom: 0;
+  }
+
+  .form__wrapper--last-item {
+    margin-bottom: 10px;
   }
 
   .form__flex-wrapper {
@@ -305,8 +380,14 @@
   }
 
   .form__submit {
-    margin-left: 0;
-    margin-right: 60px;
+    font-size: 20px;
+    margin-left: 4px;
+    margin-right: 65px;
+    padding: 15px 0;
+  }
+
+  .form__submit-button {
+    margin-bottom: 48px;
   }
 }
 
@@ -331,12 +412,43 @@
     width: auto;
   }
 
+  .form__fieldset-cat-data {
+    margin-bottom: 55px;
+  }
+
+  .form__fieldset--program-type {
+    padding-top: 35px;
+  }
+
+  .form__fieldset-owner-data {
+    margin-bottom: 50px;
+  }
+
   .form__wrapper {
     width: 570px;
+    margin-bottom: 13px;
   }
 
   .form__wrapper--last-item {
     margin-bottom: 0;
+  }
+
+  .form__label {
+    margin-right: 13px;
+  }
+
+  .form__radio-button {
+    margin-left: 24px;
+    margin-bottom: -3px;
+  }
+
+  .form__header-text {
+    margin-left: -42px;
+    padding: 0 30px;
+  }
+
+  .form__header-text--more-info {
+    width: 195px;
   }
 
   .form__email {
@@ -349,6 +461,12 @@
 
   .form__submit {
     width: 570px;
+    margin-left: 0;
+    margin-right: 83px;
+  }
+
+  .form__submit-button {
+    margin-bottom: 60px;
   }
 
   .form__container {
