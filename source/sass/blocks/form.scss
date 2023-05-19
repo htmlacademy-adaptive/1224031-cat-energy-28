@@ -107,12 +107,24 @@
     border-color: #cdcdcd;
   }
 
-  &:active {
-    border-color: #444444;
+  &:focus {
+    border: none;
+    outline: 2px solid #444444;
+
+    + .form__phone-icon,
+    + .form__email-icon {
+      stroke: #68b738;
+    }
   }
 
   &:invalid:not(:placeholder-shown) {
-    border-color: #ff8282;
+    outline: none;
+    border: 2px solid #ff8282;
+
+    + .form__phone-icon,
+    + .form__email-icon {
+      stroke: #ff8282;
+    }
   }
 
   &:focus::-webkit-input-placeholder {
@@ -219,6 +231,30 @@
   }
 }
 
+.form__email {
+  position: relative;
+}
+
+.form__phone {
+  position: relative;
+}
+
+.form__email-icon {
+  position: absolute;
+  top: 12px;
+  right: 15px;
+  fill: transparent;
+  stroke: #000000;
+}
+
+.form__phone-icon {
+  position: absolute;
+  top: 13px;
+  right: 16px;
+  fill: transparent;
+  stroke: #000000;
+}
+
 .form__wrapper {
   display: flex;
   align-items: center;
@@ -265,7 +301,7 @@
 
   .form__radio-button {
     margin-left: 28px;
-    margin-bottom: 10px;
+    margin-bottom: 9px;
   }
 
   .form__radio-styled {
@@ -296,6 +332,14 @@
       top: 0;
       left: 3px;
     }
+  }
+
+  .form__email-icon {
+    top: 20px;
+  }
+
+  .form__phone-icon {
+    top: 23px;
   }
 
   .form__fieldset {
@@ -351,7 +395,7 @@
   .form__input {
     font-size: 20px;
     line-height: 30px;
-    padding: 16px 0 12px 18px;
+    padding: 17px 0 12px 16px;
   }
 
   .form__textarea {
@@ -397,6 +441,10 @@
     align-items: center;
   }
 
+  .form__input {
+    padding: 17px 0 10px 22px;
+  }
+
   .form__desktop-flex-wrapper {
     display: flex;
     margin-bottom: 0;
@@ -418,10 +466,19 @@
 
   .form__fieldset--program-type {
     padding-top: 35px;
+    margin-bottom: 68px;
   }
 
   .form__fieldset-owner-data {
     margin-bottom: 50px;
+  }
+
+  .form__fieldset-more-info {
+    margin-bottom: 60px;
+  }
+
+  .form__fieldset-food-additives {
+    margin-bottom: 42px;
   }
 
   .form__wrapper {
@@ -455,8 +512,20 @@
     margin-right: 80px;
   }
 
+  .form__email-icon {
+    top: 22px;
+    right: 18px;
+  }
+
+  .form__phone-icon {
+    top: 24px;
+    right: 19px;
+  }
+
   .form__textarea {
     min-width: 1200px;
+    padding-left: 18px;
+    padding-top: 17px;
   }
 
   .form__submit {

@@ -7,7 +7,7 @@
   <title>HTML Academy: Кэт энерджи</title>
   <link rel="icon" href="favicon.ico">
   <link rel="apple-touch-icon" href="img/apple-favicon.png">
-  <link href="css/style.css" rel="stylesheet">
+  <link href="css/style.min.css" rel="stylesheet">
 </head>
 
 <body>
@@ -79,8 +79,10 @@
           class="button__text">Подобрать программу</span></a>
         <div class="program-choose__image-wrapper">
           <picture>
-            <source media="(min-width: 1440px)" srcset="img/program-choose-image-desktop.png 1x, img/program-choose-image-desktop@2x.png 2x">
-            <source media="(min-width: 768px)" srcset="img/program-choose-image-tablet.png 1x, img/program-choose-image-tablet@2x.png 2x">
+            <source media="(min-width: 1440px)"
+                    srcset="img/program-choose-image-desktop.png 1x, img/program-choose-image-desktop@2x.png 2x">
+            <source media="(min-width: 768px)"
+                    srcset="img/program-choose-image-tablet.png 1x, img/program-choose-image-tablet@2x.png 2x">
             <img class="program-presentation__image" src="img/program-choose-image-mobile.png" width="280" height="270"
                   alt="" srcset="img/program-choose-image-mobile@2x.png 2x">
           </picture>
@@ -94,7 +96,8 @@
         <div class="catalog-choose__item">
           <img class="catalog-choose__image" src="img/catalog-slim.svg" alt="">
           <h2 class="catalog-choose__header">Похудение</h2>
-          <p class="catalog-choose__text">Ваш кот весит больше собаки и<br> почти утратил способность лазить<br> по деревьям? Пора
+          <p class="catalog-choose__text">Ваш кот весит больше собаки и<br> почти утратил способность лазить<br> по
+            деревьям? Пора
             на
             диету! Cat<br> Energy Slim поможет вашему<br> питомцу сбросить лишний вес.</p>
           <a class="catalog-choose__link" href="catalog.html#pro">
@@ -105,7 +108,8 @@
         <div class="catalog-choose__item">
           <img class="catalog-choose__image catalog-choose__image--pro" src="img/catalog-pro.svg" alt="">
           <h2 class="catalog-choose__header catalog-choose__header--pro">Набор массы</h2>
-          <p class="catalog-choose__text">Заработать авторитет среди<br> дворовых котов и даже собак?<br> Серия Cat Energy Pro
+          <p class="catalog-choose__text">Заработать авторитет среди<br> дворовых котов и даже собак?<br> Серия Cat
+            Energy Pro
             поможет<br>
             вашему коту нарастить<br> необходимые мышцы!</p>
           <a class="catalog-choose__link" href="catalog.html#slim">
@@ -140,8 +144,7 @@
         </li>
         <li class="advantages-list__item">
           <img class="advantages-list__icon" src="img/how-it-works-time.svg" alt="">
-          <p class="advantages-list__description">Уже через месяц наслаждайтесь изменениями к лучшему<br> вашего
-            питомца!</p>
+          <p class="advantages-list__description">Уже через месяц наслаждайтесь изменениями к лучшему вашего питомца!</p>
         </li>
       </ul>
     </div>
@@ -149,27 +152,40 @@
   <section class="example">
     <div class="container">
       <div class="example__background-wrapper">
-        <h2 class="example__header">Живой пример</h2>
-        <p class="example__text">Борис сбросил 5 кг за 2 месяца, просто заменив свой обычный корм на Cat Energy Slim.
-          Отличный результат без изнуряющих тренировок! При этом он не менял своих привычек и по-прежнему спит по 16
-          часов
-          в
-          день. </p>
-        <div class="example__stats example-statistic">
-          <div class="example-statistic__flex-wrapper">
-            <div class="example-statistic__data example-data">
-              <span class="example-data__number">5 кг</span>
-              <span class="example-data__text"> Снижение<br> веса</span>
-            </div>
-            <div class="example-statistic__data example-data">
-              <span class="example-data__number">60 дней</span>
-              <span class="example-data__text example-data__text--time-spent">Затрачено<br> времени</span>
-            </div>
-          </div>
-          <p class="example__cost"><span class="example__cost-desktop">Затраты на питание:</span> 15 000 руб.</p>
-        </div>
         <div class="example__flex-wrapper">
-          <img class="example__compare" src="img/cat-compare.png" alt="">
+          <h2 class="example__header">Живой пример</h2>
+          <p class="example__text">Борис сбросил 5 кг за 2 месяца, просто заменив свой обычный корм на Cat Energy Slim.
+            Отличный результат без изнуряющих тренировок! При этом он не менял своих привычек и по-прежнему спит по 16
+            часов
+            в
+            день. </p>
+          <div class="example__stats example-statistic">
+            <div class="example-statistic__flex-wrapper">
+              <div class="example-statistic__data example-data">
+                <span class="example-data__number">5 кг</span>
+                <span class="example-data__text"> Снижение<br> веса</span>
+              </div>
+              <div class="example-statistic__data example-data">
+                <span class="example-data__number">60 дней</span>
+                <span class="example-data__text example-data__text--time-spent">Затрачено<br> времени</span>
+              </div>
+            </div>
+            <p class="example__cost"><span class="example__cost-desktop">Затраты на питание:</span> 15 000 руб.</p>
+          </div>
+        </div>
+        <div class="cat-compare">
+          <div class="cat-compare__fat"></div>
+          <div class="cat-compare__slim"></div>
+          <button class="cat-compare__slider">
+            <svg class="cat-compare__slider-button" width="40" height="40" viewBox="0 0 40 40" fill="none"
+                  xmlns="http://www.w3.org/2000/svg">
+              <rect x="1" y="1" width="38" height="38" rx="19" fill="white"/>
+              <path class="cat-compare__slider-button--hover" d="M16 11L8 20L16 29V11Z" fill="#666666"/>
+              <path class="cat-compare__slider-button--hover" d="M32 20L24 11V29L32 20Z" fill="#666666"/>
+              <rect class="cat-compare__slider-button--hover-circle" x="1" y="1" width="38" height="38" rx="19"
+                    stroke="#666666" stroke-width="2"/>
+            </svg>
+          </button>
         </div>
       </div>
     </div>
@@ -192,7 +208,7 @@
       <a class="page-footer__logo-link" href="index.html">
         <picture>
           <source media="(min-width: 768px)" srcset="img/footer-logo-desktop.svg">
-        <img class="page-footer__logo" src="img/footer-logo-mobile.svg" width="129" height="24" alt="Логотип">
+          <img class="page-footer__logo" src="img/footer-logo-mobile.svg" alt="Логотип">
         </picture>
       </a>
       <div class="page-footer__social social">

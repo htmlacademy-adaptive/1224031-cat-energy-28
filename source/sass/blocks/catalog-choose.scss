@@ -14,9 +14,13 @@
   font-size: 24px;
   line-height: 37px;
   text-transform: uppercase;
-  padding-top: 50px;
+  padding-top: 30px;
   padding-bottom: 29px;
   margin: 0 0 0 92px;
+}
+
+.catalog-choose__header--pro {
+  padding-top: 50px;
 }
 
 .catalog-choose__text {
@@ -51,7 +55,7 @@
 .catalog-choose__image {
   position: absolute;
   left: 23px;
-  top: 40px;
+  top: 20px;
 }
 
 .catalog-choose__image--pro {
