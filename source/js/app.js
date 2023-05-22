@@ -4,6 +4,8 @@ let menuOpenButton = document.getElementsByClassName('page-header__menu-button-o
 let menuCloseButton = document.getElementsByClassName('page-header__menu-button-closed');
 
 mainMenu.classList.remove('page-header__menu--no-js');
+document.querySelector('.cooperate__no-js').style.display = 'block'
+document.querySelector('.cooperate__map-image-wrapper').style.display = 'none'
 
 menuToggleButton.addEventListener('click', function () {
   if (mainMenu.classList.contains('page-header__menu--closed')) {

@@ -42,6 +42,19 @@
   height: 368px;
 }
 
+.cooperate__map-image {
+  display: block;
+  margin: 0 auto;
+}
+
+.cooperate__no-js {
+  display: none;
+}
+
+.cooperate__map-image-wrapper {
+  background-color: #eaeaea;
+}
+
 @media (min-width: $tablet-width) {
   .cooperate__map-frame {
     width: 100%;
