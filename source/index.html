@@ -53,12 +53,11 @@
                 alt="Логотип">
         </picture>
       </a>
-      <button class="page-header__menu-button"><img class="page-header__menu-button--open"
-                                                    src="img/mobile-menu-button.svg"
-                                                    alt=""><img class="page-header__menu-button--close"
-                                                                src="img/mobile-menu-close-button.svg" alt=""
-                                                                style="display: none"><span
-        class="visually-hidden">Открыть меню</span></button>
+      <button class="page-header__menu-button">
+        <img class="page-header__menu-button-opened" src="img/mobile-menu-button.svg" alt="">
+        <img class="page-header__menu-button-closed" src="img/mobile-menu-close-button.svg" alt="" style="display: none">
+        <span class="visually-hidden">Открыть меню</span>
+      </button>
     </div>
     <ul class="page-header__menu main-menu page-header__menu--closed page-header__menu--no-js">
       <li class="main-menu__item"><a
@@ -89,7 +88,7 @@
                     srcset="img/program-choose-image-desktop.png 1x, img/program-choose-image-desktop@2x.png 2x">
             <source media="(min-width: 768px)"
                     srcset="img/program-choose-image-tablet.png 1x, img/program-choose-image-tablet@2x.png 2x">
-            <img class="program-presentation__image" src="img/program-choose-image-mobile.png" width="280" height="270"
+            <img class="program-choose__image" src="img/program-choose-image-mobile.png" width="280" height="270"
                   alt="" srcset="img/program-choose-image-mobile@2x.png 2x">
           </picture>
         </div>
@@ -186,9 +185,9 @@
             <svg class="cat-compare__slider-button" width="40" height="40" viewBox="0 0 40 40" fill="none"
                   xmlns="http://www.w3.org/2000/svg">
               <rect x="1" y="1" width="38" height="38" rx="19" fill="white"/>
-              <path class="cat-compare__slider-button--hover" d="M16 11L8 20L16 29V11Z" fill="#666666"/>
-              <path class="cat-compare__slider-button--hover" d="M32 20L24 11V29L32 20Z" fill="#666666"/>
-              <rect class="cat-compare__slider-button--hover-circle" x="1" y="1" width="38" height="38" rx="19"
+              <path class="cat-compare__slider-button-hover" d="M16 11L8 20L16 29V11Z" fill="#666666"/>
+              <path class="cat-compare__slider-button-hover" d="M32 20L24 11V29L32 20Z" fill="#666666"/>
+              <rect class="cat-compare__slider-button-hover-circle" x="1" y="1" width="38" height="38" rx="19"
                     stroke="#666666" stroke-width="2"/>
             </svg>
           </button>

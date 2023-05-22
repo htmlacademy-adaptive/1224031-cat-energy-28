@@ -1,7 +1,7 @@
 let mainMenu = document.querySelector('.page-header__menu');
 let menuToggleButton = document.querySelector('.page-header__menu-button');
-let menuOpenButton = document.getElementsByClassName('page-header__menu-button--open');
-let menuCloseButton = document.getElementsByClassName('page-header__menu-button--close');
+let menuOpenButton = document.getElementsByClassName('page-header__menu-button-opened');
+let menuCloseButton = document.getElementsByClassName('page-header__menu-button-closed');
 
 mainMenu.classList.remove('page-header__menu--no-js');
 

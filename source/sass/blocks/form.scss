@@ -82,7 +82,7 @@
   z-index: 10;
 }
 
-.form__label--additives {
+.form__label-additives {
   cursor: pointer;
   color: #000000;
 }
@@ -436,7 +436,7 @@
 }
 
 @media (min-width: $desktop-width) {
-  .form__label--additives {
+  .form__label-additives {
     display: flex;
     align-items: center;
   }

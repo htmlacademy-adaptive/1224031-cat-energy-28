@@ -26,6 +26,10 @@
   left: 20px;
 }
 
+.program-choose__image {
+  padding-top: 48px;
+}
+
 @media (min-width: $tablet-width) {
   .program-choose__background-wrapper {
     background: none;
@@ -46,6 +50,11 @@
     z-index: -1;
     top: 217px;
     left: 5px;
+  }
+
+  .program-choose__image {
+    width: 700px;
+    height: 600px;
   }
 }
 
@@ -82,6 +91,12 @@
     top: 120px;
     left: 450px;
     z-index: 3;
+  }
+
+  .program-choose__image {
+    width: 550px;
+    height: 500px;
+    padding-top: 55px;
   }
 
   .program-choose__button {

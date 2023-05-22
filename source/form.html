@@ -60,12 +60,11 @@
                 alt="Логотип">
         </picture>
       </a>
-      <button class="page-header__menu-button"><img class="page-header__menu-button--open"
-                                                    src="img/mobile-menu-button.svg"
-                                                    alt=""><img class="page-header__menu-button--close"
-                                                                src="img/mobile-menu-close-button.svg" alt=""
-                                                                style="display: none"><span
-        class="visually-hidden">Открыть меню</span></button>
+      <button class="page-header__menu-button">
+        <img class="page-header__menu-button-opened" src="img/mobile-menu-button.svg" alt="">
+        <img class="page-header__menu-button-closed" src="img/mobile-menu-close-button.svg" alt="" style="display: none">
+        <span class="visually-hidden">Открыть меню</span>
+      </button>
     </div>
     <ul class="page-header__menu main-menu page-header__menu--closed page-header__menu--no-js">
       <li class="main-menu__item"><a
@@ -170,28 +169,28 @@
         class="form__header-text">Дополнительно</span></span></legend>
       <div class="form-page__container food-additives__wrapper">
         <div class="food-additives__item">
-          <label class="form__label--additives">
+          <label class="form__label-additives">
             <input class="form__checkbox" type="checkbox" id="sweetener" name="sweetener" checked>
             <span class="form__checkbox-styled"></span>
             Cахарозаменитель
           </label>
         </div>
         <div class="food-additives__item">
-          <label class="form__label--additives">
+          <label class="form__label-additives">
             <input class="form__checkbox" type="checkbox" id="water" name="water">
             <span class="form__checkbox-styled"></span>
             Питьевая вода
           </label>
         </div>
         <div class="food-additives__item">
-          <label class="form__label--additives">
+          <label class="form__label-additives">
             <input class="form__checkbox" type="checkbox" id="milk" name="milk">
             <span class="form__checkbox-styled"></span>
             Молоко
           </label>
         </div>
         <div class="food-additives__item">
-          <label class="form__label--additives">
+          <label class="form__label-additives">
             <input class="form__checkbox" type="checkbox" id="vitamins" name="vitamins">
             <span class="form__checkbox-styled"></span>
             Витамины

@@ -22,10 +22,6 @@
   padding-bottom: 165px;
 }
 
-.program-presentation__image {
-  padding-top: 48px;
-}
-
 @media (min-width: $tablet-width) {
   .program-presentation {
     text-align: left;
@@ -46,23 +42,12 @@
     padding-bottom: 50px;
     margin-left: 5px;
   }
-
-  .program-presentation__image {
-    width: 700px;
-    height: 600px;
-  }
 }
 
 @media (min-width: $desktop-width) {
   .program-presentation__header {
     padding-top: 138px;
     padding-bottom: 40px;
-  }
-
-  .program-presentation__image {
-    width: 550px;
-    height: 500px;
-    padding-top: 55px;
   }
 
   .program-presentation__text {
