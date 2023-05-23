@@ -1,12 +1,16 @@
 .food-additives__item {
-  margin-bottom: 11px;
+  margin-bottom: 12px;
 }
 
 @media (min-width: $tablet-width) {
   .food-additives__wrapper {
     display: grid;
     grid-template-columns: 1fr 1fr;
-    gap: 18px 60px;
+    gap: 20px 60px;
+  }
+
+  .food-additives__item {
+    margin-bottom: 10px;
   }
 }
 

@@ -9,7 +9,7 @@
   font-size: 36px;
   line-height: 36px;
   margin: 0;
-  padding-top: 30px;
+  padding-top: 28px;
   padding-bottom: 23px;
 }
 
@@ -20,10 +20,6 @@
   text-transform: uppercase;
   margin: 0;
   padding-bottom: 165px;
-}
-
-.program-presentation__image {
-  padding-top: 48px;
 }
 
 @media (min-width: $tablet-width) {
@@ -46,23 +42,12 @@
     padding-bottom: 50px;
     margin-left: 5px;
   }
-
-  .program-presentation__image {
-    width: 700px;
-    height: 600px;
-  }
 }
 
 @media (min-width: $desktop-width) {
   .program-presentation__header {
     padding-top: 138px;
     padding-bottom: 40px;
-  }
-
-  .program-presentation__image {
-    width: 550px;
-    height: 500px;
-    padding-top: 55px;
   }
 
   .program-presentation__text {

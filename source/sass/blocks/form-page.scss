@@ -71,12 +71,17 @@
 
   .form-page__form {
     margin-top: 60px;
+    padding-top: 5px;
   }
 }
 
 @media (min-width: $desktop-width) {
   .form-page__container {
     width: 1220px;
+  }
+
+  .form-page__description {
+    margin-top: 58px;
   }
 
   .form-page__desktop-container {
