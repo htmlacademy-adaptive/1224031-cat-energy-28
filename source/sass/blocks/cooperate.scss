@@ -8,7 +8,7 @@
   display: flex;
   align-items: center;
   padding-left: 40px;
-  padding-top: 26px;
+  padding-top: 28px;
   padding-bottom: 26px;
 }
 
@@ -52,6 +52,10 @@
 }
 
 .cooperate__map-image-wrapper {
+  background-color: #ffffff;
+}
+
+.cooperate__map-image-wrapper--main-page {
   background-color: #eaeaea;
 }
 
@@ -62,7 +66,7 @@
   }
 
   .cooperate__wrapper {
-    padding: 57px 0 61px;
+    padding: 59px 0 61px;
   }
 
   .cooperate__wrapper--main-page {

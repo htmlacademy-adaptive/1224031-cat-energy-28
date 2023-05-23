@@ -33,6 +33,7 @@
   .main-menu {
     position: static;
     background-color: transparent;
+    padding-top: 9px;
   }
 
   .main-menu__item {
@@ -45,7 +46,7 @@
   }
 
   .main-menu__link {
-    padding: 0;
+    padding: 0 0 5px;
   }
 
   .main-menu__link-active {
@@ -65,7 +66,7 @@
 
   .main-menu__link {
     padding-bottom: 5px;
-    padding-top: 6px;
+    padding-top: 0;
   }
 
   .main-menu__link--main-page {

@@ -93,11 +93,11 @@
           <div class="form-page__desktop-container">
             <div class="form__wrapper">
               <label class="form__label" for="name">Имя:*</label>
-              <input class="form__input" type="text" id="name" name="name" placeholder="Барсик" required>
+              <input class="form__input form__input-cat-data" type="text" id="name" name="name" placeholder="Барсик" required>
             </div>
             <div class="form__wrapper">
               <label class="form__label" for="weight">Вес (кг):*</label>
-              <input class="form__input" type="number" id="weight" name="weight" placeholder="7" required>
+              <input class="form__input form__input-cat-data" type="number" id="weight" name="weight" placeholder="7" required>
             </div>
             <div class="form__wrapper">
               <label class="form__label" for="age">Возраст (лет):</label>
@@ -112,43 +112,43 @@
               <label class="form__label form__radio-button">
                 <input class="form__radio" type="radio" name="program-type" value="weight-loss" checked>
                 <span class="form__radio-styled"></span>
-                <span>Похудение</span>
+                <span class="form__radio-text">Похудение</span>
               </label>
             </div>
             <div class="form__wrapper form__wrapper--radio">
               <label class="form__label form__radio-button">
                 <input class="form__radio" type="radio" name="program-type" value="weight-gain">
                 <span class="form__radio-styled"></span>
-                Набор массы
+                <span class="form__radio-text">Набор массы</span>
               </label>
             </div>
             <div class="form__wrapper form__wrapper--radio form__wrapper--last-item">
               <label class="form__label form__radio-button">
                 <input class="form__radio" type="radio" name="program-type" value="dont-know">
                 <span class="form__radio-styled"></span>
-                Не знаю (Нужен ваш совет)
+                <span class="form__radio-text">Не знаю (Нужен ваш совет)</span>
               </label>
             </div>
           </div>
         </fieldset>
       </div>
     </div>
-    <fieldset class="form__fieldset form__fieldset-owner-data owner-data">
-      <legend class="form__header"><span class="form__container"><span class="form__header-text">Контактные данные (владельца кота)</span></span>
+    <fieldset class="form__fieldset form__fieldset-owner-data">
+      <legend class="form__header form__header-cat-owner-data"><span class="form__container"><span class="form__header-text">Контактные данные (владельца кота)</span></span>
       </legend>
       <div class="form-page__container">
-        <div class="owner-data__flex-wrapper">
+        <div class="form__fieldset-owner-data-flex-wrapper">
           <div class="form__wrapper form__email">
-            <label class="form__label" for="email">E-mail:*</label>
-            <input class="form__input form__input--icon owner-data__email" type="email" id="email" name="email"
+            <label class="form__label form__label-owner-data" for="email">E-mail:*</label>
+            <input class="form__input form__input--icon" type="email" id="email" name="email"
                     placeholder="kuklachev@gmail.com" required>
             <svg class="form__email-icon" width="20px" height="20px">
               <use xlink:href="#email-icon"></use>
             </svg>
           </div>
           <div class="form__wrapper form__phone">
-            <label class="form__label" for="phone">Телефон:*</label>
-            <input class="form__input form__input--icon owner-data__phone" type="tel" id="phone" name="phone"
+            <label class="form__label form__label-owner-data form__label-owner-data--phone" for="phone">Телефон:*</label>
+            <input class="form__input form__input--icon" type="tel" id="phone" name="phone"
                     placeholder="8 (960) 900-60-90" required>
             <svg class="form__phone-icon" width="16px" height="16px">
               <use xlink:href="#phone-icon"></use>
@@ -158,15 +158,18 @@
       </div>
     </fieldset>
     <fieldset class="form__fieldset form__fieldset-more-info">
-      <legend class="form__header"><span class="form__container"><span
+      <legend class="form__header form__header__more-info"><span class="form__container"><span
         class="form__header-text form__header-text--more-info">Комментарий</span></span></legend>
       <div class="form-page__container">
         <label><textarea class="form__input form__textarea" placeholder="Расскажите обо всех повадках кота"></textarea></label>
       </div>
     </fieldset>
     <fieldset class="form__fieldset form__fieldset-food-additives food-additives">
-      <legend class="form__header form__header-food-additives"><span class="form__container"><span
-        class="form__header-text form__header-text-food-additives">Дополнительно</span></span></legend>
+      <legend class="form__header form__header-food-additives">
+        <span class="form__container">
+          <span class="form__header-text form__header-text-food-additives">Дополнительно</span>
+        </span>
+      </legend>
       <div class="form-page__container food-additives__wrapper">
         <div class="food-additives__item">
           <label class="form__label-additives">
@@ -204,15 +207,25 @@
     </div>
   </form>
   <section class="cooperate">
-    <div class="cooperate__wrapper container">
-      <h2 class="cooperate__text">Приглашаем<br> к сотрудничеству дилеров!</h2>
-      <address class="cooperate__address">ул. Большая<br> Конюшенная, д. 19/8 <span class="cooperate__address-city">Санкт-Петербург</span>
-      </address>
+    <div class="cooperate__no-js" style="display: none">
+      <div class="cooperate__wrapper container">
+        <h2 class="cooperate__text">Приглашаем<br> к сотрудничеству дилеров!</h2>
+        <address class="cooperate__address">ул. Большая<br> Конюшенная, д. 19/8 <span class="cooperate__address-city">Санкт-Петербург</span>
+        </address>
+      </div>
+      <iframe class="cooperate__map-frame"
+              src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d999.3082505019979!2d30.323291478803025!3d59.93850553089186!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x4696310fca145cc1%3A0x42b32648d8238007!2z0JHQvtC70YzRiNCw0Y8g0JrQvtC90Y7RiNC10L3QvdCw0Y8g0YPQuy4sIDE5LzgsINCh0LDQvdC60YIt0J_QtdGC0LXRgNCx0YPRgNCzLCAxOTExODY!5e0!3m2!1sru!2sru!4v1681208752885!5m2!1sru!2sru"
+              width="1440" height="400" style="border:0;" allowfullscreen="" loading="lazy"
+              referrerpolicy="no-referrer-when-downgrade"></iframe>
     </div>
-    <iframe class="cooperate__map-frame"
-            src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d999.3082505019979!2d30.323291478803025!3d59.93850553089186!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x4696310fca145cc1%3A0x42b32648d8238007!2z0JHQvtC70YzRiNCw0Y8g0JrQvtC90Y7RiNC10L3QvdCw0Y8g0YPQuy4sIDE5LzgsINCh0LDQvdC60YIt0J_QtdGC0LXRgNCx0YPRgNCzLCAxOTExODY!5e0!3m2!1sru!2sru!4v1681208752885!5m2!1sru!2sru"
-            width="1440" height="400" style="border:0;" allowfullscreen="" loading="lazy"
-            referrerpolicy="no-referrer-when-downgrade"></iframe>
+    <div class="cooperate__map-image-wrapper">
+      <picture>
+        <source media="(min-width: 1440px)" srcset="img/map-nojs-desktop.jpg">
+        <source media="(min-width: 768px)" srcset="img/map-nojs-tablet.jpg">
+        <img class="cooperate__map-image" src="img/map-nojs-mobile.jpg"
+             alt="Карта с расположением офиса">
+      </picture>
+    </div>
   </section>
 </main>
 <footer class="page-footer">
