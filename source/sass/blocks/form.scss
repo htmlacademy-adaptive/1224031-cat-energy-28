@@ -74,7 +74,7 @@
 }
 
 .form__header__more-info {
-margin-bottom: 38px;
+  margin-bottom: 38px;
 }
 
 .form__header-text {
@@ -99,6 +99,7 @@ margin-bottom: 38px;
   margin: 0 auto;
   z-index: 10;
 }
+
 .form__label {
   cursor: pointer;
   margin-right: 14px;
@@ -163,14 +164,13 @@ margin-bottom: 38px;
 
 input[type="number"]::-webkit-outer-spin-button,
 input[type="number"]::-webkit-inner-spin-button {
-  -webkit-appearance: none;
+  appearance: none;
 }
 
 input[type="number"],
 input[type="number"]:hover,
 input[type="number"]:focus {
-  appearance: none;
-  -moz-appearance: textfield;
+  appearance: textfield;
 }
 
 .form__input--icon {
@@ -560,7 +560,6 @@ input[type="number"]:focus {
   }
 
   .form__checkbox {
-
     &:checked + .form__checkbox-styled::before {
       top: 4px;
       left: 2px;
