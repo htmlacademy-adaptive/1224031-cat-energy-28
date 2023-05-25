@@ -7,9 +7,10 @@
 .cooperate__wrapper {
   display: flex;
   align-items: center;
-  padding-left: 40px;
-  padding-top: 28px;
-  padding-bottom: 26px;
+  padding-top: 14px;
+  width: 280px;
+  margin: 0 auto;
+  padding-bottom: 12px;
 }
 
 .cooperate--main-page-background {
@@ -23,8 +24,7 @@
   line-height: 20px;
   text-transform: uppercase;
   color: #111111;
-  width: 250px;
-  margin: 0 -36px 0 0;
+  width: 260px;
 }
 
 .cooperate__address {
@@ -66,11 +66,8 @@
   }
 
   .cooperate__wrapper {
-    padding: 59px 0 61px;
-  }
-
-  .cooperate__wrapper--main-page {
-    padding-top: 60px;
+    width: 707px;
+    padding: 43px 0;
   }
 
   .cooperate__text {
@@ -102,8 +99,8 @@
 
   .cooperate__text {
     width: 220px;
-    margin-right: 80px;
-    margin-left: 85px;
+    margin-right: 85px;
+    margin-left: 92px;
   }
 
   .cooperate__address {
@@ -121,6 +118,6 @@
     display: flex;
     justify-content: center;
     width: 570px;
-    padding: 60px 0 60px;
+    padding: 43px 0;
   }
 }
