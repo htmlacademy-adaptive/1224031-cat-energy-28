@@ -78,18 +78,10 @@
 }
 
 .form__header-text {
-  display: inline-block;
+  display: block;
   background-color: #ffffff;
-  padding: 0 0 0 20px;
-  width: 200px;
-}
-
-.form__header-text--more-info {
-  width: 144px;
-}
-
-.form__header-text-food-additives {
-  width: 164px;
+  padding: 0 20px;
+  width: max-content;
 }
 
 .form__container {
@@ -343,17 +335,12 @@ input[type="number"]:focus {
   }
 
   .form__header-text {
-    width: 520px;
-    margin-left: -31px;
-    padding: 0 30px;
-  }
+    margin-left: -38px;
+    padding: 0 39px;
 
-  .form__header-text--more-info {
-    width: 191px;
-  }
-
-  .form__header-text-food-additives {
-    width: 224px;
+    br {
+      display: none;
+    }
   }
 
   .form__radio-button {
@@ -516,18 +503,10 @@ input[type="number"]:focus {
   }
 
   .form__header-text {
-    width: 520px;
-    margin-left: 130px;
-    padding: 1px 36px;
-  }
-
-  .form__header-text--more-info {
-    width: 188px;
+    margin-left: 135px;
   }
 
   .form__header-text-food-additives {
-    width: 223px;
-    margin-left: 130px;
     padding: 0 35px;
   }
 
@@ -599,7 +578,7 @@ input[type="number"]:focus {
   }
 
   .form__fieldset-more-info {
-    margin-bottom: 62px;
+    margin-bottom: 65px;
   }
 
   .form__fieldset-food-additives {

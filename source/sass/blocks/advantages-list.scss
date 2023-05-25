@@ -41,8 +41,8 @@
     display: flex;
     flex-direction: column;
     align-items: flex-start;
-    height: 227px;
     background-position: 125px 0;
+    padding-bottom: 40px;
 
     &:nth-child(1) {
       background-image: url("../img/advantages-list-background-number-1.svg");
@@ -90,6 +90,6 @@
 
   .advantages-list__item {
     width: 245px;
-    height: 280px;
+    padding-bottom: 93px;
   }
 }

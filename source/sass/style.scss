@@ -1,7 +1,11 @@
-//Общие стили
+//Глобальные стили
 @import "global/variables";
 @import "global/fonts";
 @import "global/global";
+@import "global/visually-hidden";
+@import "global/container";
+
+//Общие стили
 @import "blocks/button";
 @import "blocks/main-menu";
 @import "blocks/page-header";
