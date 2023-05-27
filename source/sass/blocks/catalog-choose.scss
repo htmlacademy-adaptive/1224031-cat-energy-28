@@ -46,7 +46,7 @@
   text-decoration: none;
   text-transform: uppercase;
   margin-top: 19px;
-  margin-left: 21px;
+  margin-left: 23px;
   padding-bottom: 23px;
 
   &:hover .catalog-choose__arrow-image {
@@ -139,19 +139,16 @@
 @media (min-width: $desktop-width) {
   .catalog-choose__grid-wrapper {
     display: grid;
-    grid-template-columns: 1fr 1fr;
+    grid-template-columns: 570px 570px;
     gap: 80px;
     margin-bottom: 50px;
   }
 
   .catalog-choose__header {
-    text-align: center;
     margin-bottom: 46px;
     padding-top: 50px;
-  }
-
-  .catalog-choose__header--pro {
-    margin-left: 63px;
+    margin-left: 184px;
+    word-wrap: break-word;
   }
 
   .catalog-choose__link {
@@ -189,6 +186,7 @@
   .catalog-choose__text {
     width: 460px;
     padding-bottom: 28px;
+    word-wrap: break-word;
   }
 
   .catalog-choose__arrow-image {
